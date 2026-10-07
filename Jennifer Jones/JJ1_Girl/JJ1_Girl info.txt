@@ -1,0 +1,32 @@
+Custom Digitizing for Jennifer Jones 
+
+JJ1_Girl,
+Size:108.4x174.4 mm (4.27x6.87 "),
+Stitches:19182
+
+11 Colors,16 Thread Changes
+
+Needle 1,Eggshell,Gunold Poly 61350
+Needle 2,Bleu Mist,Gunold Poly 61464
+Needle 3,Black,Gunold Poly 61449
+Needle 4,Beauty Rose Light,Gunold Poly 61117
+Needle 5,Laurie Lilac,Gunold Poly 61194
+Needle 6,Beauty Rose Light,Gunold Poly 61117
+Needle 7,Rose Quartz,Gunold Poly 61121
+Needle 8,Eggshell,Gunold Poly 61350
+Needle 9,Black,Gunold Poly 61449
+Needle 10,Pale Blue,Gunold Poly 61030
+Needle 11,Rose Quartz,Gunold Poly 61121
+Needle 12,Fresh Mint,Gunold Poly 61410
+Needle 13,Tropical Wave,Gunold Poly 61045
+Needle 14,Jade Green,Gunold Poly 61503
+Needle 15,Eggshell,Gunold Poly 61350
+Needle 16,Gold/Yellow,Gunold Poly 61905
+
+Format DST, PES
+
+Liuba Tabunidze
+Embroidery Digitizer
+
+www.etsy.com/shop/ArtEmbroideryDesigns
+order@ArtEmbroidery.ca
