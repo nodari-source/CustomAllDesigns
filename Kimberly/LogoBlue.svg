@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="402" height="150" viewBox="0, 0, 402, 150">
+  <g id="Background" display="none"/>
+  <g id="Logo">
+    <g>
+      <path d="M205.59,45 L215.368,59.527 L356.454,59.527 L346.584,69.212 L221.888,69.212 L225.148,74.055 L341.649,74.055 L331.779,83.74 L231.667,83.74 L234.926,88.582 L303.308,88.582 L294.529,98.267 L241.446,98.267 L244.705,103.109 L290.14,103.109 L281.361,112.794 L251.225,112.794 L256.075,120 L239.79,120 L200.378,59.595 L160.315,120 L144.247,120 L149.128,112.794 L120.639,112.794 L111.86,103.109 L155.69,103.109 L158.97,98.267 L107.471,98.267 L98.692,88.582 L165.532,88.582 L168.813,83.74 L70.221,83.74 L60.351,74.055 L175.374,74.055 L178.655,69.212 L55.416,69.212 L45.545,59.527 L185.216,59.527 L195.058,45 L205.59,45 z" fill="#000080"/>
+      <path d="M391,45 L381.13,54.685 L307.104,54.685 L297.234,45 L391,45 z" fill="#000080"/>
+      <path d="M104.766,45 L94.896,54.685 L20.87,54.685 L11,45 L104.766,45 z" fill="#000080"/>
+    </g>
+  </g>
+  <g id="BusinessName">
+    <text transform="matrix(1, 0, 0, 1, 220, 27.5)">
+      <tspan x="-174.255" y="12.5" font-family="PirulenRg-Regular" font-size="36" fill="#000080">AERODRONE</tspan>
+      <tspan x="139.017" y="12.5" font-family="PirulenRg-Regular" font-size="14" fill="#000080">LTD</tspan>
+    </text>
+  </g>
+</svg>
