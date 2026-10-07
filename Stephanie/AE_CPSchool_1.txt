@@ -1,0 +1,7 @@
+5 Colors
+Background,Snow White,255,255,255
+Needle 1,Dark Yellow,200,190,6
+Needle 2,Blue Ribbon,0,37,74
+Needle 3,Blue,0,73,147
+Needle 4,Lilac Hint,207,207,207
+Needle 5,Snow White,255,255,255
