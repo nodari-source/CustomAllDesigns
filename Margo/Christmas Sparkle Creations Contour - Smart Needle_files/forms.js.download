@@ -1,0 +1,36 @@
+jQuery(function($) {
+
+	var chosen_options = {
+		disable_search_threshold: 15
+	};
+
+	$('select').chosen(chosen_options);
+
+	//$('#pa_file-type').prop('disabled', true).trigger('chosen:updated');
+	/*
+	$form = $('form.variations_form');
+	$form.unbind( 'check_variations update_variation_values found_variation' );
+	$form.find( '.reset_variations' ).unbind( 'click' );
+	$form.find( '.variations select' ).unbind( 'change focusin' );
+
+	$(document).on('change', '#package', function(e) {
+		//console.log('selected index: ' + e.target.selectedIndex);
+		if ($(this).val() == 'embroidery-collection') {
+			//console.log('Enabling file type');
+
+			$('#pa_file-type')
+				.prop('disabled', false)
+				.trigger('chosen:updated');
+
+		} else {
+			//console.log('Disabling file type');
+
+			$('#pa_file-type')
+				.val('all-formats')
+				.prop('disabled', true)
+				.trigger('chosen:updated');
+		}
+	});
+*/
+
+});

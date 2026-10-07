@@ -1,0 +1,154 @@
+jQuery(function($) {
+	
+	if ($(window).width() < 980) {
+		$('#menu-item-9 a').text('account');
+	}
+
+	/* Plugin Stuffs */
+	if ($(window).width() > 980) {
+		var jscrollpane_options = {
+			autoReinitialise: true
+		};
+	}
+
+	$('.scroll-pane').jScrollPane(jscrollpane_options);
+
+    window.onload = function(e){
+		$( "#pa_file-type" ).show();
+		$( "#choose-purchase-option" ).show();
+		$( "#quantity" ).show();
+		$( "#select-amount" ).show();
+		$( "#purchase" ).show();
+		$( "#color" ).show();
+		$( ".variations select" ).show();
+		$( "select#billing_country" ).show();
+		$( "select#shipping_country" ).show();
+		$( "select#shipping_state" ).show();
+		$( "select#s2id_billing_country" ).hide();
+		$( "select#s2id_shipping_country" ).hide();
+		
+        $('.jspContainer').css('height', '724px');
+		/*$('.chosen-container a').first().remove();*/
+		/*$.cookie('TR_LNG', '1234');*/
+		$(".fancybox").fancybox({
+			'showCloseButton': true,
+			'hideOnContentClick': true,
+			'autoDimensions': false,
+			'autoSize': false,
+			'fitToView': false,
+			'width': '460',
+			'height': '480'
+		});
+		$( ".wc-amazon-checkout-message" ).insertBefore( $( "#payment" ) );
+		
+    }
+	
+
+	$('.jcarousel')
+		.on('jcarousel:create jcarousel:reload', function() {
+			var element = $(this),
+				width = element.innerWidth();
+
+			if (width > 900) {
+				width = width / 3;
+			} else if (width > 600) {
+				width = width / 3;
+			} else{
+				width = width;
+			}
+
+			element.jcarousel('items').css('width', width + 'px');
+		})
+
+	var jcarousel_options = {
+		scroll: 1,
+		auto: .01,
+		wrap: 'circular',
+		easing: 'linear',
+		'perPage': 3
+	};
+	
+	
+	
+
+	$('.jcarousel').jcarousel(jcarousel_options);
+	
+	$('.jcarousel-prev').jcarouselControl({
+        target: '-=1'
+    });
+
+    $('.jcarousel-next').jcarouselControl({
+        target: '+=1'
+    });
+	
+	var total_items = $('.jcarousel').jcarousel(jcarousel_options).find('li').length;
+	if(total_items <= 3){                
+		$('.jcarousel-prev, .jcarousel-next').hide();
+	}
+	
+
+	/* Custom Stuffs */
+	
+	$( "#coupon_code" ).insertBefore( "form.checkout_giftcard" );
+
+	//$('.drop-menu-button').click(function(e) {
+	//	e.preventDefault();
+	//	$(this).siblings('.drop-menu-content').slideToggle('fast');
+	//});
+	$('.drop-menu-button').click(function(e) {
+		e.stopPropagation();
+		$(this).siblings('.drop-menu-content').slideToggle('fast');
+	});
+	$('.drop-menu-content').click(function(e){
+		e.stopPropagation();
+	});
+	$(document).click(function(){
+		 $('.drop-menu-content').slideUp();
+	});
+
+	$('.product .thumbnails .zoom img').on('click', function(e) {
+		e.preventDefault();
+		$mainImage = $('.product .woocommerce-main-image img');
+		//newSrc = $(this).prop('src').replace('-184x108', '');
+		newSrc = $(this).prop('src').replace('-141x108', '');
+		$mainImage.prop('src', newSrc);
+	});
+
+	$('.faq-question').click(function(e) {
+		e.preventDefault();
+		$( $(this).data('target') ).slideToggle();
+    });
+
+    $('.faq-subquestion').click(function(e) {
+        e.preventDefault();
+        $( $(this).data('target') ).slideToggle();
+    });
+
+    $("body").on("contextmenu", "img", function(e) {
+        return false;
+    });
+
+
+
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+});

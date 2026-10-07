@@ -1,0 +1,116 @@
+@keyframes wpc-spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes wpc-spinner {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes woosl-spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes woosl-spinner {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.woosl-button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 1;
+    color: #222222;
+    background-color: #eeeeee;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eeeeee;
+}
+
+.woosl-button:hover {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+}
+
+.woosl-button:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+}
+
+.woosl-button.add:before {
+    background-image: url(../images/add-dark.svg);
+}
+
+.woosl-button.remove {
+    font-size: 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.woosl-button.remove:before {
+    background-image: url(../images/remove-dark.svg);
+    margin-right: 0;
+}
+
+.woosl-button.loading:before {
+    background-image: url(../images/curve-dark.svg);
+    -webkit-animation: woosl-spinner 1s linear infinite;
+    -moz-animation: woosl-spinner 1s linear infinite;
+    -ms-animation: woosl-spinner 1s linear infinite;
+    -o-animation: woosl-spinner 1s linear infinite;
+    animation: woosl-spinner 1s linear infinite;
+}
+
+.woosl_table {
+    margin-bottom: 60px;
+}
+
+.woosl_table.woosl_table_loading {
+    opacity: 0.5;
+}
+
+.woosl_table.woosl_table_close tbody {
+    display: none;
+}
+
+.woosl_table thead {
+    display: table-header-group !important;
+}
+
+.woosl_table tr td.woosl-product-image {
+    width: 100px;
+}
+
+.woosl_table tr td.woosl-product-atc {
+    text-align: right;
+}
+
+.woosl-heading {
+    cursor: pointer;
+}
+
+.woosl-heading .button {
+    float: right;
+}
+
+.woosl-product-attributes {
+    margin: 0;
+    list-style: none;
+    font-size: 0.8em;
+}
+
+/*# sourceMappingURL=frontend.css.map */
