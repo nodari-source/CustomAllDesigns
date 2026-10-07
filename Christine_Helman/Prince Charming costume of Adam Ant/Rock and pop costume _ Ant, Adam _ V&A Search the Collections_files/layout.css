@@ -1,0 +1,72 @@
+.container {
+    width: 992px;
+    margin: 0 auto;
+}
+
+#global_header, #search {
+    padding: 0 24px;
+}
+
+#site_links, #footer_links, #content, #hygiene {
+    margin: 0 24px;
+}
+
+#hygiene {
+    margin-bottom: 30px;
+}
+
+#global_header_menu {
+    height: 29px;
+}
+
+#header_wrapper {
+    height: 87px;
+}
+
+#header_wrapper #blurb {
+    width: 300px;
+    margin-left: 40px; 
+}
+
+#user {
+    width: auto;
+    margin-top: 14px;
+}
+
+#basic_search, #advanced_search, #site_links {
+    overflow: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.pull {
+    float: left;
+}
+
+.push {
+    float: right;
+}
+
+.half_width {
+    width: 450px !important;
+}
+
+.pad-right {
+    padding-right:24px !important;
+}
+
+ul.inline li {
+    display: inline;
+}
+
+
+/* hide stuff till I get to it */
+
+
+#advanced_search {
+/*
+    display: none;
+*/
+}

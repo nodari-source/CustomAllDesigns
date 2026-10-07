@@ -1,0 +1,164 @@
+function getCookie(name){ var re = new RegExp(name + "=([^;]+)"), value = re.exec(document.cookie); return (value != null) ? unescape(value[1]) : null; }
+
+$(document).ready(function(){
+    $(function(){
+        $('a.new-window').click(function(){
+            window.open(this.href);
+            return false;
+        });
+    });
+        
+    $('a[rel*="overlay"]').overlay();
+        
+    $('#mycarousel').jcarousel();
+
+    var btn_request;
+    $('#request_page_data, #request_overlay_data').each(function(){
+        var btn_id = $(this).attr('data-id'), 
+            btn_label = $(this).attr('data-label'), 
+            img_id = $(this).attr('data-img'), 
+            img_label = $(this).attr('data-obj'),
+            img_path = 'http://media.vam.ac.uk/collections/img/'+ img_id.substr(0, 4) +'/'+ img_id.substr(4, 2) +'/'+ img_id +'_2500.jpg',
+            survey = document.cookie.indexOf('SURVEYED')<0,
+            btn_survey, href;
+        if( btn_label=='Download image'){
+            btn_request = '<a class="push order_this_image" id="'+ btn_id +'" href="'+ img_path +'" target="_blank" data-img="'+ img_id +'" data-obj="'+ img_label +'" download="'+ img_id +'_2500.jpg">'+ btn_label +'</a>';
+            if( survey ){ 
+                btn_survey = '<a rel="#overlay_survey" href="#" class="push order_this_image" data-id="'+ btn_id +'">'+ btn_label +'</a>';
+                $(this).after($(btn_survey).overlay()).remove();
+            }else{
+                $(this).after(btn_request).remove();
+                var uid = getCookie('SURVEYED').split(':'),
+                    useage = uid[1];
+                uid = uid[0];
+                $('#'+btn_id).attr('data-sess',uid).attr('data-use',useage);
+            }
+        }else{
+            $(this).after('<span class="push order_this_image">'+ btn_label +'</span>').remove();
+        }
+    });
+    
+    $('a[rel="#overlay_survey"]').click(function(e){
+        $('#overlay_survey')[0].trig = $(this).attr('data-id');
+        $('#overlay_survey .img_terms').attr('checked', false);
+        $('#usage_select').attr('selectedIndex',0);
+        $('#usage_prompt, #terms_prompt').removeClass('error');
+        $('#overlay_survey_submit').find('.order_this_image').remove();
+        document.cookie = 'SURVEYED=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    });
+    
+    $('#overlay_survey').delegate('.img_terms, #usage_select', 'change', function(e){
+        var valid = valid_t = valid_u = t = 0;
+        $('#usage_prompt, #terms_prompt').removeClass('error');
+        $('#overlay_survey_submit').find('.order_this_image').remove();
+        $('.img_terms').each(function(){ ++t; if( $(this).is(':checked') ){ ++valid } });
+        if( valid===t ){ valid_t=1 }
+        if( $('#usage_select').attr('selectedIndex')>0 ){ ++valid; valid_u=1 }
+        if( valid_u && !valid_t ){ $('#terms_prompt').addClass('error') }
+        if( valid_t && !valid_u ){ $('#usage_prompt').addClass('error') }
+        if( valid_t && valid_u ){
+            var id,
+                date = new Date(),
+                uid = date.getTime() +'-'+ Math.ceil(Math.random()*100),
+                useage = $('#usage_select option:selected').text();
+            date.setTime(date.getTime()+(30*60*1000));
+            document.cookie = 'SURVEYED='+ uid +':'+ useage +'; expires='+ date.toUTCString() +'; path=/';
+            $('a[rel="#overlay_survey"]').each(function(){
+                $(this).after($(btn_request).attr('id',$(this).attr('data-id')).attr('data-sess', uid).attr('data-use', useage));
+            });
+            $('#overlay_survey_submit').append($('#'+$("#overlay_survey")[0].trig));
+        }
+    });
+    
+    $('#overlay_survey').delegate('.order_this_image', 'click', function(e){
+        $('a[rel="#overlay_survey"]').each(function(){
+            $(this).overlay().close();
+            $(this).after($('#'+$(this).attr('data-id'))).remove();
+        });
+    });
+    
+    $("a.carousel_image").click(function(event) {
+        event.preventDefault();
+        
+        var image_id = this.id.substring(1);
+        var subdir = image_id.substring(0, 6);
+        var new_image_src = collection_images_url+subdir+"/"+image_id+"_jpg_ds.jpg";
+        var enlarged_image_src = collection_images_url+subdir+"/"+image_id+ "_jpg_l.jpg";
+        $('#main_image').attr("src", new_image_src);
+        $('#overlay img').attr("src", enlarged_image_src);
+        $('#enlarge_image').attr("href", enlarged_image_src);
+        $('#displayed_image_id').html(image_id);
+        
+        /* we also need to update the link in the order image link */
+        $("#request_page, #request_overlay").attr('href', 'http://media.vam.ac.uk/collections/img/'+ image_id.substr(0, 4) +'/'+ image_id.substr(4, 2) +'/'+ image_id +'_2500.jpg').attr('data-img', image_id);
+    });
+     
+    $("#details-tabs ul li a").click(function(event){
+        event.preventDefault();
+        
+        var clicked_tab = $(event.target).parent()[0].id;
+        
+        var tabs = new Array("#tab-summary", "#tab-more-information", "#tab-Map");
+        $.each(tabs, function(i, tab) {
+            if(tab == "#"+clicked_tab) {
+                $(tab).addClass("selected");
+                $(tab).removeClass("unselected");
+            } else {
+                $(tab).addClass("unselected");
+                $(tab).removeClass("selected");
+            }
+        });
+        
+        var pane_to_show = "#pane-"+clicked_tab.substr(4);
+        $(pane_to_show).show(0);
+
+        if(pane_to_show == "#pane-Map") {
+            initialize();
+        }
+
+        var panes = new Array("#pane-summary", "#pane-more-information", "#pane-Map");
+        panes.splice($.inArray(pane_to_show, panes), 1);
+        $.each(panes, function(i, pane) {
+            $(pane).hide(0);
+        });
+        
+        var description_height = $("#pane-summary").height();
+        var history_height = $("#pane-more-information").height();
+        
+    });
+    
+    $("#main_image").rightClick(function(event){
+        $.get(sf_relative_url_root + "/images/right-click-main.gif");
+    });    
+    
+    $("#enlarged_image").rightClick(function(event){
+        $.get(sf_relative_url_root + "/images/right-click-enlarged.gif");
+    });
+    
+    
+    $("#email_item_submit").click(function(event) {
+        event.preventDefault();
+        $.getJSON(sf_relative_url_root+'/cis/emailitem', $("#email_item_form").serialize(), function(json){
+            if(json.sent) {
+                $("#overlay_email_content").html(json.html);
+            } else {
+                $("#overlay_email_form").html(json.html); 
+            }
+        });
+    });
+   
+    //~ $(document).keydown(function(e){
+        //~ if (e.keyCode == 37) { 
+            //~ var url = $("li.previous a").attr("href");
+        //~ } else if (e.keyCode == 39) {
+            //~ var url = $("li.next a").attr("href");
+        //~ } else {
+            //~ return false;
+        //~ }
+        //~ console.log(url);
+        //~ self.location = url;
+        //~ 
+    //~ });
+
+    
+});

@@ -1,0 +1,278 @@
+/* layout
+-------------------------------------------------------------- */
+
+#item-details div.left-column {
+    width: 356px;
+    margin-right: 28px;
+    height: 100%;
+}
+
+#item-details div.right-column {
+    width: 560px;
+}
+
+div#basic-details {
+    padding-bottom: 19px;
+}
+
+div#basic-details, div#basic-details ul {
+    overflow: auto;
+/*
+    margin-bottom: 10px;
+*/
+}
+
+div#details-wrapper {
+    margin-bottom: 20px;
+    overflow:hidden;
+    clear:both;
+}
+
+div#basic-details ul li {
+/*
+    margin-bottom: 9px;
+*/
+    overflow: auto;
+    width: auto;
+}
+
+div#basic-details ul li span p {
+    margin-bottom: 1.0em;
+}   
+
+div#basic-details li strong {
+    display: block;
+    float: left;
+    width: 180px;
+}
+
+div#basic-details li div.content {
+    display: block;
+    float: left;
+    width: 380px;
+}
+
+div.item-image {
+    border-bottom: 1px solid #E9CAC8;
+    overflow: auto;
+}
+
+div.item-image ul li.push {
+    margin-right: 1px;
+}
+
+/* utility bar
+-------------------------------------------------------------- */
+
+div.utility {
+    height: 32px;
+    background-color: #FAFAFA;
+    margin-bottom: 20px;
+    border: 1px solid #EDEDED;
+    border-left: none;
+}
+
+div.utility ul li {
+    float: left;
+/*
+    text-align: center;
+*/
+}
+
+div.utility ul li a {
+    display: block;
+    border-right: 1px solid #E9CAC8;
+    margin-top: 8px;
+    padding: 0 14px;
+}
+
+div.utility ul li.back {
+    width: 174px;
+    background-color: #F5F5F5;
+}
+
+div.utility ul li.previous {
+    width: 95px;
+    text-align: center;
+}
+
+div.utility ul li.next {
+    width: 86px;
+    text-align: center;
+}
+
+div.utility ul li.back a {
+    background: url(../images/template/arrow_left_white_red_bg.gif) 0 50% no-repeat;
+    border-right: 1px solid #EDEDED;
+    color: #ac2b27;
+    padding: 9px 16px 0 32px;
+    height: 23px;
+    margin: 0;
+}
+
+div.utility ul li.previous a {
+    background: url(../images/template/arrow_grey_left.gif) 12px 50% no-repeat;
+}
+
+div.utility ul li.next a {
+    background: url(../images/template/arrow_grey_right.gif) 66px 50% no-repeat;
+}
+
+div.utility ul li.previous a:hover {
+    background: url(../images/template/arrow_red_left.gif) 12px 50% no-repeat;
+}
+
+div.utility ul li.next a:hover {
+    background: url(../images/template/arrow_red_right.gif) 66px 50% no-repeat;
+}
+
+div.utility ul li.helpus a {
+    color: #AC2B26;
+}
+
+div.utility ul li.addthis a {
+    border-right: none;
+}
+
+/* image-carousel
+-------------------------------------------------------------- */
+
+/*
+div#carousel {
+    height: 154px;
+    border-top: 1px solid #E9CAC8;
+    border-bottom: 1px solid #E9CAC8;
+}
+*/
+
+
+/* details tabs
+-------------------------------------------------------------- */
+
+div#details-tabs ul li {
+    border-top: 1px solid #fff;
+    height: 29px;
+}
+
+div#details-tabs ul {
+/*
+    overflow: auto;
+*/
+    float: left;
+}
+
+
+
+div#details-tabs ul li {
+    width: 87px;
+    padding-left: 18px;
+}
+
+div#details-tabs ul li.selected {
+    background-color: #fff;
+    border-top: 1px solid #E9CAC8;
+    border-left: 1px solid #E9CAC8;
+    border-right: 1px solid #E9CAC8;
+    border-bottom: 1px solid #fff;
+}
+
+div#details-tabs ul li.unselected {
+    background-color: #f5f5f5;
+    border-top: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+    border-left: 1px solid #EDEDED;
+    border-bottom: 1px solid #E9CAC8;
+}
+
+div#details-tabs ul li.redundant {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    background-color: #fff;
+}
+
+div#details-tabs ul li a {
+    padding: 0 0 9px 0;
+}
+
+#download-pdf {
+    height: 29px;
+    float: right;
+    text-align: right;
+    border-bottom: 1px solid #E9CAC8;
+    border-right: 1px solid #E9CAC8;
+    border-top: 1px solid #fff;
+}
+
+#download-pdf.width_1 {
+    width: 430px;
+}
+
+#download-pdf.width_2 {
+    width: 345px;
+}
+
+#download-pdf.width_3 {
+    width: 238px;
+}
+
+#download-pdf a {
+    background: url(../images/template/icon_adobe_pdf.gif) 0 50% no-repeat;
+    padding-left: 25px;
+    margin: 6px;
+}
+
+/* details panes
+-------------------------------------------------------------- */
+
+div.pane {
+    padding: 18px;
+    border-left: 1px solid #E9CAC8;
+    border-right: 1px solid #E9CAC8;
+    border-bottom: 1px solid #E9CAC8;
+}
+
+div.pane p {
+/*
+    padding-top: 10px;
+*/
+    overflow: auto;
+}
+
+div#pane-more-information, div#pane-Map {
+/*
+    display: none;
+*/
+}
+
+div#related_searches {
+    margin-top: 12px;
+    border-bottom: 1px solid #E9CAC8;
+}
+
+div#related_searches ul {
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+div#related_searches ul li h3 {
+    color: #555555;
+}
+
+div#related_searches ul li ul li a {
+    padding-right: 12px;
+    background: url(../images/template/arrow_grey_right.gif) 100% 50% no-repeat;
+}
+
+div#related_searches ul li ul li a:hover {
+    background: url(../images/template/arrow_red_right.gif) 100% 50% no-repeat;
+}
+
+.geo {
+    display: none;
+}
+
+#map {
+    overflow: hidden;
+}
+

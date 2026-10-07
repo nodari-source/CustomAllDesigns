@@ -1,0 +1,2849 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: RAPIDxREPAIRxAUTOMOTIVExSERVICES_tile_0
+%%Creator: SignLab Print and Cut - RAPID REPAIR AUTOMOTIVE SERVICES.CDL
+%%CreationDate: Wed Jun 18 12:48:26 2014
+%%BoundingBox: 36 485 1620 1062
+%%LanguageLevel: 3
+%%EndComments
+%%BeginResource: procset Signlab5Dict 5.0 0
+%%BeginProlog
+% Copyright (C) 1992-2004
+% Cadlink Technology Corporation
+% Ottawa, CANADA
+% All Rights Reserved
+/Signlab5Dict 100 dict def
+Signlab5Dict begin
+/bdf {bind def} bind def
+/ldf {load def} bdf
+/xdf {exch def} bdf
+/w /setlinewidth ldf
+/N {newpath} bdf
+/n {newpath} bdf
+/Cp {closepath} bdf
+/u {} bdf
+/U {} bdf
+/w {setlinewidth} bdf
+/k {/FType 1 def dup 3 1 roll add 1 exch sub 4 1 roll
+dup 3 1 roll add 1 exch sub 4 1 roll add 1 exch sub 3 1 roll /RedFill xdf /GreenFill xdf /BlueFill xdf} bdf
+/K {dup 3 1 roll add 1 exch sub 4 1 roll
+dup 3 1 roll add 1 exch sub 4 1 roll add 1 exch sub 3 1 roll /RedLine xdf /GreenLine xdf /BlueLine xdf} bdf
+/m /moveto ldf
+/l /lineto ldf
+/L /lineto ldf
+/rl /rlineto ldf
+/c /curveto ldf
+/C /curveto ldf
+/J {setlinecap} bdf
+/j {setlinejoin} bdf
+/M {setmiterlimit} bdf
+/Cn { Cp clip n} bdf
+/PRset { /PR xdf } bdf
+/HsbToRgb
+{
+3 -1 roll dup floor sub 3 1 roll sethsbcolor currentrgbcolor
+} bdf
+/RgbToHsb
+{
+setrgbcolor currenthsbcolor
+} bdf
+/NewGNextCol
+{
+GDir 1 eq
+{
+GDeltaBL add 3 1 roll
+GDeltaGR add 3 1 roll
+GDeltaRD add 3 1 roll
+}
+{
+GDeltaB add 3 1 roll
+GDeltaS add 3 1 roll
+GDeltaH add 3 1 roll
+} ifelse
+} bdf
+/NewGSetCol
+{
+GDir 1 eq
+{
+3 copy setrgbcolor
+}
+{
+3 copy HsbToRgb setrgbcolor
+} ifelse
+} bdf
+/NewGCalcCols
+{
+GDir 1 eq
+{
+4 -1 roll sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaBL xdf
+3 -1 roll sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaGR xdf
+exch sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaRD xdf
+}
+{
+4 -1 roll sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaB xdf
+3 -1 roll sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaS xdf
+exch sub GAdjHue GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaH xdf
+} ifelse
+} bdf
+/NewGFStart
+{
+SCP
+GColArray 0 3 getinterval aload pop setrgbcolor
+GType 1 eq
+{
+GNewLinearType 0 eq
+{
+pathbbox
+dup 3 index sub GNumSteps div /GStepSize xdf
+dup 3 index sub 2 index 5 index sub Max dup /GWidth xdf /GPadHeight xdf
+3 index 3 index translate
+exch 4 -1 roll sub GOriginX mul 3 1 roll exch sub GOriginY mul
+2 copy abs exch abs Max dup GPadHeight add /GPadHeight xdf
+GWidth add /GWidth xdf translate
+/GPadHeight GPadHeight GScaleY mul 2 mul def
+/GWidth GWidth GScaleY mul 2 mul def
+GAng neg rotate 1.0 GScaleY scale
+}
+{
+[ Gr11 Gr12 Gr21 Gr22 Gtx Gty ] matrix currentmatrix matrix concatmatrix setmatrix
+/GStepSize 1 256 div def
+pathbbox abs 3 -1 roll abs Max /GPadHeight xdf
+abs exch abs Max /GWidth xdf
+}ifelse
+fill
+}
+{
+[ Gr11 Gr12 Gr21 Gr22 Gtx Gty ] matrix currentmatrix matrix concatmatrix setmatrix
+GType 2 ne
+{
+/GRadius GRepNum def
+/GStepSize GRadius GNumSteps div GRepNum div def
+}
+{
+/GRadius GRtConicalRadius def
+/GCurAng 0 def
+/GDeltaAng 360 GNumSteps div GRepNum div def
+} ifelse
+fill
+} ifelse
+} bdf
+/NewGFEnd
+{
+GType 1 eq
+{
+GColArray dup length 4 idiv 1 sub 4 mul 3 getinterval aload pop
+setrgbcolor
+n GWidth neg 0 m GWidth 0 l GWidth GPadHeight l
+GWidth neg GPadHeight l Cp fill
+} if
+GType 3 eq
+{
+n
+n 0 0 m 0 0 GRadius 0 360 arc fill
+}if
+GType 4 eq
+{
+n GRadius dup neg dup m
+2 mul dup 0 rl dup 0 exch rl neg 0 rl Cp fill
+}if
+} bdf
+/NewGFSmooth
+{
+NewGFStart
+GIsRadialOrSquare
+{
+GSwitchHSBDir
+} if
+1 1 GRepNum
+{
+/GRepIndex xdf
+GIsWave
+{
+GIsRadialOrSquare GRepNum 2 mod 0 eq and
+{/GRepIndex GRepIndex 1 add def} if
+GRepIndex 2 mod 0 eq {GSwitchHSBDir} if
+} if
+1 1 GColArray length 4 idiv 1 sub
+GIsWave
+{
+GRepIndex 2 mod 0 eq {3 1 roll neg exch} if
+} if
+{
+dup GColArray exch 4 mul 3 add get /GNumSegSteps xdf
+dup 1 sub
+GIsWave
+{
+GRepIndex 2 mod 0 eq {exch} if
+} if
+GColArray exch 4 mul 3 getinterval
+aload pop
+GDir 1 eq {3 copy}{RgbToHsb 3 copy} ifelse
+GColArray 8 -1 roll 4 mul 3 getinterval
+aload pop
+GDir 1 ne {RgbToHsb} if
+NewGCalcCols
+GNumSegSteps
+{
+NewGSetCol
+GFillStep
+NewGNextCol
+} repeat
+pop pop pop
+} for
+GIsWave
+{
+GRepIndex 2 mod 0 eq {GSwitchHSBDir} if
+} if
+} for
+NewGFEnd
+} bdf
+/NewGFStripes
+{
+NewGFStart
+1 1 GRepNum
+{
+/GRepIndex xdf
+0 1 GColArray length 4 idiv 1 sub dup /GLoopMax xdf
+GIsWave
+{
+GRepIndex 2 mod 0 eq {3 1 roll neg exch} if
+} if
+{
+dup
+GIsLinearOrConical
+{
+dup /GLoopIndex xdf
+GLoopIndex GLoopMax eq
+{pop 0}{1 add} ifelse
+} if
+GColArray exch 4 mul 3 add get /GNumSegSteps xdf
+GColArray exch 4 mul 3 getinterval
+aload pop
+NewGSetCol
+pop pop pop
+GNumSegSteps
+{
+GFillStep
+} repeat
+} for
+} for
+NewGFEnd
+} bdf
+/NewF
+{
+FType 1 eq
+{
+BlueFill GreenFill RedFill setrgbcolor
+PR 1 eq
+{fill} {eofill} ifelse
+}
+{
+GbSmooth 1 eq {NewGFSmooth}{NewGFStripes} ifelse
+} ifelse
+} bdf
+/HsbToCmyk
+{
+3 -1 roll dup floor sub 3 1 roll sethsbcolor currentcmykcolor
+} bdf
+/CmykToHsb
+{
+setcmykcolor currenthsbcolor
+} bdf
+/SCP
+{
+PR 1 eq
+{clip} {eoclip} ifelse
+} bdf
+/Min
+{
+2 copy gt {exch pop}{pop} ifelse
+} bdf
+/Max
+{
+2 copy lt {exch pop}{pop} ifelse
+} bdf
+/GNextCol
+{
+GDir 1 eq
+{
+GDeltaK add 4 1 roll
+GDeltaY add 4 1 roll
+GDeltaM add 4 1 roll
+GDeltaC add 4 1 roll
+}
+{
+GDeltaB add 3 1 roll
+GDeltaS add 3 1 roll
+GDeltaH add 3 1 roll
+} ifelse
+} bdf
+/GSetCol
+{
+GDir 1 eq
+{
+4 copy setcmykcolor
+}
+{
+3 copy HsbToCmyk setcmykcolor
+} ifelse
+} bdf
+/GAdjHue
+{
+dup 0 eq
+{
+pop GDir 3 eq
+{.99}
+{-.99} ifelse
+} if
+dup GDir 3 eq exch 0 lt and
+{1 add} if
+dup GDir 2 eq exch 0 gt and
+{1 sub} if
+} bdf
+/GCalcCols
+{
+GDir 1 eq
+{
+5 -1 roll sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaK xdf
+4 -1 roll sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaY xdf
+3 -1 roll sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaM xdf
+exch sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaC xdf
+}
+{
+4 -1 roll sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaB xdf
+3 -1 roll sub GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaS xdf
+exch sub GAdjHue GNumSegSteps dup 1 gt {1 sub} if dup 0 gt {div}{pop pop 0} ifelse /GDeltaH xdf
+} ifelse
+} bdf
+/GPostHighlight
+{
+[{
+%%BeginFeature: *Inverse Prime
+$breaklink
+%%EndFeature
+} stopped cleartomark
+} bdf
+/GHfill
+{
+GHighlight {GPreHighlightColorspace fill GPreHighlightLinkPlanes} if
+fill
+GHighlight {GPostHighlight} if
+} bdf
+/GHeofill
+{
+GHighlight {GPreHighlightColorspace eofill GPreHighlightLinkPlanes} if
+eofill
+GHighlight {GPostHighlight} if
+} bdf
+/GFillStep
+{
+GType 1 eq
+{
+n GWidth neg 0 m GWidth 0 l GWidth GStepSize 1.05 mul l
+GWidth neg GStepSize 1.05 mul l Cp GHfill
+0 GStepSize translate
+}
+{
+GType 2 eq
+{
+n 0 0 m 0 0 GRadius GCurAng dup GDeltaAng 1.05 mul add arc GHfill
+/GCurAng GCurAng GDeltaAng add def
+}
+{
+GType 3 eq
+{
+n 0 0 m 0 0 GRadius 0 360 arc
+/GNewRadius GRadius GStepSize 1.1 mul sub def
+GNewRadius 0 le
+{
+GHfill
+}
+{
+0 0 GNewRadius 0 360 arc
+GHeofill
+}ifelse
+}
+{
+n GRadius dup neg dup m
+2 mul dup 0 rl dup 0 exch rl neg 0 rl Cp
+/GNewRadius GRadius GStepSize 1.1 mul sub def
+GNewRadius 0 le
+{
+GHfill
+}
+{
+GNewRadius dup neg dup m
+2 mul dup 0 rl dup 0 exch rl neg 0 rl Cp
+GHeofill
+}ifelse
+} ifelse
+/GRadius GRadius GStepSize sub def
+} ifelse
+} ifelse
+} bdf
+/GFStart
+{
+SCP
+GColArray 0 4 getinterval aload pop setcmykcolor
+GType 1 eq
+{
+GNewLinearType 0 eq
+{
+pathbbox
+dup 3 index sub GNumSteps div /GStepSize xdf
+dup 3 index sub 2 index 5 index sub Max dup /GWidth xdf /GPadHeight xdf
+3 index 3 index translate
+exch 4 -1 roll sub GOriginX mul 3 1 roll exch sub GOriginY mul
+2 copy abs exch abs Max dup GPadHeight add /GPadHeight xdf
+GWidth add /GWidth xdf translate
+/GPadHeight GPadHeight GScaleY mul 2 mul def
+/GWidth GWidth GScaleY mul 2 mul def
+GAng neg rotate 1.0 GScaleY scale
+}
+{
+[ Gr11 Gr12 Gr21 Gr22 Gtx Gty ] matrix currentmatrix matrix concatmatrix setmatrix
+/GStepSize 1 256 div def
+pathbbox abs 3 -1 roll abs Max /GPadHeight xdf
+abs exch abs Max /GWidth xdf
+}ifelse
+GHfill
+}
+{
+[ Gr11 Gr12 Gr21 Gr22 Gtx Gty ] matrix currentmatrix matrix concatmatrix setmatrix
+GType 2 ne
+{
+/GRadius GRepNum def
+/GStepSize GRadius GNumSteps div GRepNum div def
+}
+{
+/GRadius GRtConicalRadius def
+/GCurAng 0 def
+/GDeltaAng 360 GNumSteps div GRepNum div def
+} ifelse
+GHfill
+} ifelse
+} bdf
+/GFEnd
+{
+GType 1 eq
+{
+GColArray dup length 5 idiv 1 sub 5 mul 4 getinterval aload pop
+setcmykcolor
+n GWidth neg 0 m GWidth 0 l GWidth GPadHeight l
+GWidth neg GPadHeight l Cp GHfill
+} if
+} bdf
+/GF
+{
+GFStart
+1 1 GColArray length 5 idiv 1 sub
+{
+dup GColArray exch 5 mul 4 add get /GNumSegSteps xdf
+1 1 GRepNum
+{
+exch dup dup 1 sub 4 -1 roll
+GRepType 3 eq
+{
+GType 3 eq GType 4 eq or {GRepNum 1 add add} if
+2 mod 0 eq {exch} if
+}
+{
+pop
+} ifelse
+GColArray exch 5 mul 4 getinterval
+aload pop
+GDir 1 eq {4 copy}{CmykToHsb 3 copy} ifelse
+GColArray GDir 1 eq {10}{8} ifelse -1 roll 5 mul 4 getinterval
+aload pop
+GDir 1 ne {CmykToHsb} if
+GCalcCols
+GNumSegSteps
+{
+GSetCol
+GFillStep
+GNextCol
+} repeat
+pop pop pop
+GDir 1 eq {pop} if
+} for
+pop
+} for
+GFEnd
+} bdf
+/GIsWave
+{
+GRepNum 1 gt GRepType 3 eq and
+} bdf
+/GIsRadialOrSquare
+{
+GType 3 eq GType 4 eq or
+} bdf
+/GIsLinearOrConical
+{
+GType 1 eq GType 2 eq or
+} bdf
+/GSwitchHSBDir
+{
+GDir 1 ne {GDir 2 eq { /GDir 3 def}{/GDir 2 def} ifelse} if
+} bdf
+/GFSmooth
+{
+GFStart
+GIsRadialOrSquare
+{
+GSwitchHSBDir
+} if
+1 1 GRepNum
+{
+/GRepIndex xdf
+GIsWave
+{
+GIsRadialOrSquare GRepNum 2 mod 0 eq and
+{/GRepIndex GRepIndex 1 add def} if
+GRepIndex 2 mod 0 eq {GSwitchHSBDir} if
+} if
+1 1 GColArray length 5 idiv 1 sub
+GIsWave
+{
+GRepIndex 2 mod 0 eq {3 1 roll neg exch} if
+} if
+{
+dup GColArray exch 5 mul 4 add get /GNumSegSteps xdf
+dup 1 sub
+GIsWave
+{
+GRepIndex 2 mod 0 eq {exch} if
+} if
+GColArray exch 5 mul 4 getinterval
+aload pop
+GDir 1 eq {4 copy}{CmykToHsb 3 copy} ifelse
+GColArray GDir 1 eq {10}{8} ifelse -1 roll 5 mul 4 getinterval
+aload pop
+GDir 1 ne {CmykToHsb} if
+GCalcCols
+GNumSegSteps
+{
+GSetCol
+GFillStep
+GNextCol
+} repeat
+pop pop pop
+GDir 1 eq {pop} if
+} for
+GIsWave
+{
+GRepIndex 2 mod 0 eq {GSwitchHSBDir} if
+} if
+} for
+GFEnd
+} bdf
+/GFStripes
+{
+GFStart
+1 1 GRepNum
+{
+/GRepIndex xdf
+0 1 GColArray length 5 idiv 1 sub dup /GLoopMax xdf
+GIsWave
+{
+GRepIndex 2 mod 0 eq {3 1 roll neg exch} if
+} if
+{
+dup
+GIsLinearOrConical
+{
+dup /GLoopIndex xdf
+GLoopIndex GLoopMax eq
+{pop 0}{1 add} ifelse
+} if
+GColArray exch 5 mul 4 add get /GNumSegSteps xdf
+GColArray exch 5 mul 4 getinterval
+aload pop
+GSetCol
+pop pop pop pop
+GNumSegSteps
+{
+GFillStep
+} repeat
+} for
+} for
+GFEnd
+} bdf
+/F
+{
+FType 1 eq
+{
+BlueFill GreenFill RedFill setrgbcolor
+PR 1 eq
+{fill} {eofill} ifelse
+}
+{
+GbSmooth 1 eq {GFSmooth}{GFStripes} ifelse
+} ifelse
+} bdf
+
+/SpotGF_Duotone_Data
+{
+/SLColorSpace xdf
+dup length 1 eq {0 get /SFoilNames xdf /NFoil 1 def }{/SFoilNames xdf /NFoil SFoilNames length def}ifelse
+/STintValues xdf
+/SpectraFlag xdf
+/SAlternateCMYK xdf
+/SToMarkers xdf
+/SFromMarkers xdf
+/NMarkers SFromMarkers length 2 div def
+}bdf
+
+%/SpotGF_Duotone_Data
+%{
+%/SFoilNames xdf
+%/STintValues xdf
+%/SpectraFlag xdf
+%/SAlternateCMYK xdf
+%/SToMarkers xdf
+%/SFromMarkers xdf
+%/NFoil SFoilNames length def
+%/NMarkers SFromMarkers length 2 div def
+%}bdf
+
+/SpotGF_LN
+{
+dup 0 le{ pop 0 }if
+dup 1 ge{ pop 1 }if
+}bdf
+
+/SpotGF_SetColorSpace
+{
+[NFoil 1 eq {/Separation}{/DeviceN}ifelse SFoilNames
+SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse
+{
+/SAltC 0.0 def
+/SAltM 0.0 def
+/SAltY 0.0 def
+/SAltK 0.0 def
+0 1 NFoil 1 sub{
+/SCurIter xdf
+/SCurTint xdf
+SLColorSpace 0 eq {
+/SAltSubArray SAlternateCMYK NFoil SCurIter sub 1 sub 4 mul 4 getinterval def
+/SAltK SAltK SCurTint SAltSubArray 3 get mul add def
+/SAltY SAltY SCurTint SAltSubArray 2 get mul add def
+/SAltM SAltM SCurTint SAltSubArray 1 get mul add def
+/SAltC SAltC SCurTint SAltSubArray 0 get mul add def
+}{
+/SAltSubArray SAlternateCMYK NFoil SCurIter sub 1 sub 3 mul 3 getinterval def
+/SAltY SAltY SCurTint SAltSubArray 2 get 1 exch sub mul add def
+/SAltM SAltM SCurTint SAltSubArray 1 get 1 exch sub mul add def
+/SAltC SAltC SCurTint SAltSubArray 0 get 1 exch sub mul add def
+}ifelse
+} for
+SLColorSpace 1 eq {
+SAltY SpotGF_LN /SAltY exch 1 exch sub def
+SAltM SpotGF_LN /SAltM exch 1 exch sub def
+SAltC SpotGF_LN /SAltC exch 1 exch sub def
+}if
+SAltC SpotGF_LN SAltM SpotGF_LN SAltY SpotGF_LN  SLColorSpace 0 eq{SAltK SpotGF_LN}if
+}] setcolorspace
+} bdf
+
+%/SpotGF_SetColorSpace
+%{
+%[/DeviceN SFoilNames /DeviceCMYK {
+%/SAltC 0.0 def
+%/SAltM 0.0 def
+%/SAltY 0.0 def
+%/SAltK 0.0 def
+%0 1 NFoil 1 sub{
+%/SCurIter xdf
+%/SCurTint xdf
+%/SAltSubArray SAlternateCMYK NFoil SCurIter sub 1 sub 4 mul 4 getinterval def
+%/SAltK SAltK SCurTint SAltSubArray 3 get mul add def
+%/SAltY SAltY SCurTint SAltSubArray 2 get mul add def
+%/SAltM SAltM SCurTint SAltSubArray 1 get mul add def
+%/SAltC SAltC SCurTint SAltSubArray 0 get mul add def
+%} for
+%SAltC SpotGF_LN SAltM SpotGF_LN SAltY SpotGF_LN SAltK SpotGF_LN 
+%}] setcolorspace
+%} bdf
+
+/SpotGF_Duotone_SetStartColor
+{
+0 1 NFoil 1 sub
+{
+/FoilIndex xdf
+/Mo
+FoilIndex SpectraFlag lt
+{
+SFromMarkers 1 get
+}
+{
+SToMarkers 1 get
+}ifelse
+def
+STintValues FoilIndex get Mo mul
+} for
+setcolor
+} bdf
+/SpotGF_Duotone_SetEndColor
+{
+0 1 NFoil 1 sub
+{
+/FoilIndex xdf
+/Mf
+FoilIndex SpectraFlag lt
+{
+SFromMarkers dup length 1 sub get
+}
+{
+SToMarkers dup length 1 sub get
+}ifelse
+def
+STintValues FoilIndex get Mf mul
+} for
+setcolor
+} bdf
+/SpotGF_Duotone_GetTintInfo
+{
+/NTintSteps SFromMarkers MarkerIndex 1 add 2 mul get def
+/StartEndTints
+[
+0 1 NFoil 1 sub
+{
+/FoilIndex xdf
+/MStart
+FoilIndex SpectraFlag lt
+{
+SFromMarkers MarkerIndex 2 mul 1 add get
+}
+{
+SToMarkers MarkerIndex 2 mul 1 add get
+}ifelse
+def
+/MEnd
+FoilIndex SpectraFlag lt
+{
+SFromMarkers MarkerIndex 1 add 2 mul 1 add get
+}
+{
+SToMarkers MarkerIndex 1 add 2 mul 1 add get
+}ifelse
+def
+STintValues FoilIndex get dup MStart mul exch MEnd mul
+}for
+] def
+} bdf
+/SpotGF_Duotone_CalcDeltaTint
+{
+/DeltaTints
+[
+0 1 NFoil 1 sub
+{
+2 mul StartEndTints exch 2 getinterval aload pop sub NTintSteps div
+}for
+] def
+}bdf
+/SpotGF_Duotone_SetTint
+{
+0 1 NFoil 1 sub
+{
+/FoilIndex xdf
+StartEndTints FoilIndex 2 mul get
+DeltaTints FoilIndex get
+TintStepsIndex mul sub
+}for
+setcolor
+} bdf
+/SpotGF_Duotone_Smooth
+{
+SpotGF_SetColorSpace
+SpotGF_Duotone_SetStartColor
+SpotGF_Start
+0 1 NMarkers 2 sub
+{
+/MarkerIndex xdf
+SpotGF_Duotone_GetTintInfo
+SpotGF_Duotone_CalcDeltaTint
+0 1 NTintSteps 1 sub
+{
+/TintStepsIndex xdf
+SpotGF_Duotone_SetTint
+SpotGF_FillStep
+SpotGF_TranslateStep
+} for
+} for
+SpotGF_Duotone_SetEndColor
+SpotGF_End
+} bdf
+
+/SpotGF_Monotone_Data
+{
+/SLColorSpace xdf
+dup length 1 eq {0 get /SFoilNames xdf /NFoil 1 def }{/SFoilNames xdf /NFoil SFoilNames length def}ifelse
+/STintValues xdf
+/SAlternateCMYK xdf
+/SMarkers xdf
+/NMarkers SMarkers length 2 div def
+}bdf
+
+%/SpotGF_Monotone_Data
+%{
+%/SFoilNames xdf
+%/STintValues xdf
+%/SAlternateCMYK xdf
+%/SMarkers xdf
+%/NFoil SFoilNames length def
+%/NMarkers SMarkers length 2 div def
+%}bdf
+
+/SpotGF_Monotone_SetStartColor
+{
+/Mo SMarkers 1 get def
+0 1 NFoil 1 sub
+{
+STintValues exch get Mo mul
+}for
+setcolor
+}bdf
+/SpotGF_Monotone_SetEndColor
+{
+/Mf SMarkers dup length 1 sub get def
+0 1 NFoil 1 sub
+{
+STintValues exch get Mf mul
+}for
+setcolor
+}bdf
+/SpotGF_Monotone_GetTintInfo
+{
+/NTintSteps SMarkers MarkerIndex 1 add 2 mul get def
+/MStart SMarkers MarkerIndex 2 mul 1 add get def
+/MEnd SMarkers MarkerIndex 1 add 2 mul 1 add get def
+/StartEndTints
+[
+0 1 NFoil 1 sub
+{
+STintValues exch get dup MStart mul exch MEnd mul
+}for
+]def
+}bdf
+/SpotGF_Monotone_CalcDeltaTint
+{
+/DeltaTints
+[
+0 1 NFoil 1 sub
+{
+2 mul StartEndTints exch 2 getinterval aload pop sub NTintSteps div
+}for
+]def
+}bdf
+/SpotGF_Monotone_SetTint
+{
+0 1 NFoil 1 sub
+{
+/FoilIndex xdf
+StartEndTints FoilIndex 2 mul get
+DeltaTints FoilIndex get
+TintStepsIndex mul sub
+}for
+setcolor
+} bdf
+/SpotGF_Monotone_Smooth
+{
+SpotGF_SetColorSpace
+SpotGF_Monotone_SetStartColor
+SpotGF_Start
+0 1 NMarkers 2 sub
+{
+/MarkerIndex xdf
+SpotGF_Monotone_GetTintInfo
+SpotGF_Monotone_CalcDeltaTint
+0 1 NTintSteps 1 sub
+{
+/TintStepsIndex xdf
+SpotGF_Monotone_SetTint
+SpotGF_FillStep
+SpotGF_TranslateStep
+}for
+}for
+SpotGF_Monotone_SetEndColor
+SpotGF_End
+}bdf
+/SpotGF_TM_Data
+{
+/SGFType xdf
+/Sty xdf
+/Stx xdf
+/Sr22 xdf
+/Sr21 xdf
+/Sr12 xdf
+/Sr11 xdf
+/SNumSteps xdf
+}bdf
+/SpotGF_FillStep
+{
+SGFType 1 eq
+{
+n
+SWidth neg 0 m
+SWidth 0 l
+SWidth SStepSize l
+SWidth neg SStepSize l
+Cp
+GHfill
+}if
+SGFType 3 eq
+{
+n
+0 0 m
+0 0 SRadius 0 360 arc
+/SNewRadius SRadius SStepSize 1.1 mul sub def
+SNewRadius 0 le
+{
+GHfill
+}
+{
+0 0 SNewRadius 0 360 arc
+GHeofill
+}ifelse
+}if
+SGFType 4 eq
+{
+n
+SRadius dup neg dup m
+2 mul dup 0 rl
+dup 0 exch rl
+neg 0 rl
+Cp
+/SNewRadius SRadius SStepSize 1.1 mul sub def
+SNewRadius 0 le
+{
+GHfill
+}
+{
+SNewRadius dup neg dup m
+2 mul dup 0 rl
+dup 0 exch rl
+neg 0 rl
+Cp
+GHeofill
+}ifelse
+GHfill
+}if
+}bdf
+/SpotGF_TranslateStep
+{
+SGFType 1 eq
+{
+0 SStepSize translate
+}if
+SGFType 3 eq SGFType 4 eq or
+{
+/SRadius SRadius SStepSize sub def
+}if
+}bdf
+/SpotGF_End
+{
+SGFType 1 eq
+{
+n
+SWidth neg 0 m
+SWidth 0 l
+SWidth SPadHeight l
+SWidth neg SPadHeight l
+Cp
+GHfill
+}if
+SGFType 3 eq
+{
+n
+0 0 m
+0 0 SRadius 0 360 arc
+GHfill
+}if
+SGFType 4 eq
+{
+n
+SRadius dup neg dup m
+2 mul dup 0 rl
+dup 0 exch rl
+neg 0 rl
+Cp
+GHfill
+}if
+}bdf
+/SpotGF_Start
+{
+SCP
+SGFType 1 eq
+{
+[Sr11 Sr12 Sr21 Sr22 Stx Sty] matrix currentmatrix matrix concatmatrix setmatrix
+/SStepSize 1 SNumSteps div def
+pathbbox abs 3 -1 roll abs Max /SPadHeight xdf
+abs exch abs Max /SWidth xdf
+GHfill
+}if
+SGFType 3 eq SGFType 4 eq or
+{
+[Sr11 Sr12 Sr21 Sr22 Stx Sty] matrix currentmatrix matrix concatmatrix setmatrix
+/SRadius 1 def
+/SStepSize SRadius SNumSteps div def
+GHfill
+}if
+}bdf
+/SpotGF_Multitone_Data
+{
+/SLColorSpace xdf
+/STotalFoils xdf %array of triplets [ bool string string] =>  [ bSpectratone topfoil bottomfoil]
+/STotalTintValues xdf %array of pairs [double double] => [toptint bottomtint]
+/SFoilPositions xdf %array of integers [int] => [position]
+/SAlternateCMYK xdf %array
+/SAltStartCMYK xdf %array
+/SAltEndCMYK xdf %array
+/SBoostPos xdf %double
+/NTotalFoils STotalFoils length 3 div cvi def
+}bdf
+/SpotGF_Multitone_CurAlt
+{
+SLColorSpace 0 eq {/SLIndex4 4 def /SLIndex8 8 def}{/SLIndex4 3 def /SLIndex8 6 def}ifelse
+SGFType 1 eq
+{
+/ArrayIndex MarkerIndex def
+}
+{
+/ArrayIndex NTotalFoils MarkerIndex sub 1 sub def
+}ifelse
+ArrayIndex NTotalFoils 1 sub eq %only one foil left
+{
+STotalFoils ArrayIndex 3 mul get 0 eq
+{ % monotone spot color
+/SCurAltCMYK [ SAlternateCMYK ArrayIndex SLIndex8 mul SLIndex4 getinterval aload pop ] def
+}
+{ % Spectratone spot color
+/SCurAltCMYK [ SAlternateCMYK ArrayIndex SLIndex8 mul SLIndex8 getinterval aload pop ] def
+}ifelse
+}
+{
+/SubArray STotalFoils ArrayIndex 3 mul 6 getinterval def
+[
+SubArray 0 get 0 eq
+{ % 1st monotone spot color
+SAlternateCMYK ArrayIndex SLIndex8 mul SLIndex4 getinterval aload pop
+}
+{ % 1st Spectratone spot color
+SAlternateCMYK ArrayIndex SLIndex8 mul SLIndex8 getinterval aload pop
+}ifelse
+SubArray 3 get 0 eq
+{ % 2nd monotone spot color
+SAlternateCMYK ArrayIndex SLIndex8 mul SLIndex8 add SLIndex4 getinterval aload pop
+}
+{ % 2nd Spectratone spot color
+SAlternateCMYK ArrayIndex SLIndex8 mul SLIndex8 add SLIndex8 getinterval aload pop
+}ifelse
+]  /SCurAltCMYK xdf
+}ifelse
+}bdf
+%/SpotGF_Multitone_CurAlt
+%{
+%SGFType 1 eq
+%{
+%/ArrayIndex MarkerIndex def
+%}
+%{
+%/ArrayIndex NTotalFoils MarkerIndex sub 1 sub def
+%}ifelse
+%ArrayIndex NTotalFoils 1 sub eq %only one foil left
+%{
+%STotalFoils ArrayIndex 3 mul get 0 eq
+%{ % monotone spot color
+%/SCurAltCMYK [ SAlternateCMYK ArrayIndex 8 mul 4 getinterval aload pop ] def
+%}
+%{ % Spectratone spot color
+%/SCurAltCMYK [ SAlternateCMYK ArrayIndex 8 mul 8 getinterval aload pop ] def
+%}ifelse
+%}
+%{
+%/SubArray STotalFoils ArrayIndex 3 mul 6 getinterval def
+%[
+%SubArray 0 get 0 eq
+%{ % 1st monotone spot color
+%SAlternateCMYK ArrayIndex 8 mul 4 getinterval aload pop
+%}
+%{ % 1st Spectratone spot color
+%SAlternateCMYK ArrayIndex 8 mul 8 getinterval aload pop
+%}ifelse
+%SubArray 3 get 0 eq
+%{ % 2nd monotone spot color
+%SAlternateCMYK ArrayIndex 8 mul 8 add 4 getinterval aload pop
+%}
+%{ % 2nd Spectratone spot color
+%SAlternateCMYK ArrayIndex 8 mul 8 add 8 getinterval aload pop
+%}ifelse
+%] /SCurAltCMYK xdf
+%}ifelse
+%}bdf
+/SpotGF_Multitone_SetColorSpace
+{
+SGFType 1 eq
+{
+/ArrayIndex MarkerIndex def
+}
+{
+/ArrayIndex NTotalFoils MarkerIndex sub 1 sub def
+}ifelse
+ArrayIndex NTotalFoils 1 sub eq %only one foil left
+{
+/SubArray STotalFoils ArrayIndex 3 mul 3 getinterval def
+SubArray 0 get 0 eq
+{ % monotone spot color
+/SFoilNames [ SubArray 1 get ] def
+/NFoil 1 def
+}
+{ % Spectratone spot color
+/SFoilNames [ SubArray 1 get SubArray 2 get ] def
+/NFoil 2 def
+}ifelse
+}
+{
+/SubArray STotalFoils ArrayIndex 3 mul 6 getinterval def
+/NFoil 0 def
+[
+SubArray 0 get 0 eq
+{ % 1st monotone spot color
+SubArray 1 get
+/NFoil NFoil 1 add def
+}
+{ % 1st Spectratone spot color
+SubArray 1 get SubArray 2 get
+/NFoil NFoil 2 add def
+}ifelse
+SubArray 3 get 0 eq
+{ % 2nd monotone spot color
+SubArray 4 get
+/NFoil NFoil 1 add def
+}
+{ % 2nd Spectratone spot color
+SubArray 4 get SubArray 5 get
+/NFoil NFoil 2 add def
+}ifelse
+] /SFoilNames xdf
+}ifelse
+[/DeviceN SFoilNames SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse {
+/SAltC 0.0 def
+/SAltM 0.0 def
+/SAltY 0.0 def
+/SAltK 0.0 def
+0 1 NFoil 1 sub{
+/SCurIter xdf
+/SCurTint xdf
+SLColorSpace 0 eq {
+/SAltSubArray SCurAltCMYK NFoil SCurIter sub 1 sub 4 mul 4 getinterval def
+/SAltK SAltK SCurTint SAltSubArray 3 get mul add def
+/SAltY SAltY SCurTint SAltSubArray 2 get mul add def
+/SAltM SAltM SCurTint SAltSubArray 1 get mul add def
+/SAltC SAltC SCurTint SAltSubArray 0 get mul add def
+}{
+/SAltSubArray SCurAltCMYK NFoil SCurIter sub 1 sub 3 mul 3 getinterval def
+/SAltY SAltY SCurTint SAltSubArray 2 get 1 exch sub mul add def
+/SAltM SAltM SCurTint SAltSubArray 1 get 1 exch sub mul add def
+/SAltC SAltC SCurTint SAltSubArray 0 get 1 exch sub mul add def
+}ifelse
+} for
+SLColorSpace 1 eq {
+SAltY SpotGF_LN /SAltY exch 1 exch sub def
+SAltM SpotGF_LN /SAltM exch 1 exch sub def
+SAltC SpotGF_LN /SAltC exch 1 exch sub def
+}if
+SAltC SpotGF_LN SAltM SpotGF_LN SAltY SpotGF_LN SLColorSpace 0 eq{SAltK }if
+}] setcolorspace
+} bdf
+%/SpotGF_Multitone_SetColorSpace
+%{
+%SGFType 1 eq
+%{
+%/ArrayIndex MarkerIndex def
+%}
+%{
+%/ArrayIndex NTotalFoils MarkerIndex sub 1 sub def
+%}ifelse
+%ArrayIndex NTotalFoils 1 sub eq %only one foil left
+%{
+%/SubArray STotalFoils ArrayIndex 3 mul 3 getinterval def
+%SubArray 0 get 0 eq
+%{ % monotone spot color
+%/SFoilNames [ SubArray 1 get ] def
+%/NFoil 1 def
+%}
+%{ % Spectratone spot color
+%/SFoilNames [ SubArray 1 get SubArray 2 get ] def
+%/NFoil 2 def
+%}ifelse
+%}
+%{
+%/SubArray STotalFoils ArrayIndex 3 mul 6 getinterval def
+%/NFoil 0 def
+%[
+%SubArray 0 get 0 eq
+%{ % 1st monotone spot color
+%SubArray 1 get
+%/NFoil NFoil 1 add def
+%}
+%{ % 1st Spectratone spot color
+%SubArray 1 get SubArray 2 get
+%/NFoil NFoil 2 add def
+%}ifelse
+%SubArray 3 get 0 eq
+%{ % 2nd monotone spot color
+%SubArray 4 get
+%/NFoil NFoil 1 add def
+%}
+%{ % 2nd Spectratone spot color
+%SubArray 4 get SubArray 5 get
+%/NFoil NFoil 2 add def
+%}ifelse
+%] /SFoilNames xdf
+%}ifelse
+%[/DeviceN SFoilNames /DeviceCMYK {
+%/SAltC 0.0 def
+%/SAltM 0.0 def
+%/SAltY 0.0 def
+%/SAltK 0.0 def
+%0 1 NFoil 1 sub{
+%/SCurIter xdf
+%/SCurTint xdf
+%/SAltSubArray SCurAltCMYK NFoil SCurIter sub 1 sub 4 mul 4 getinterval def
+%/SAltK SAltK SCurTint SAltSubArray 3 get mul add def
+%/SAltY SAltY SCurTint SAltSubArray 2 get mul add def
+%/SAltM SAltM SCurTint SAltSubArray 1 get mul add def
+%/SAltC SAltC SCurTint SAltSubArray 0 get mul add def
+%} for
+%SAltC SAltM SAltY SAltK
+%}] setcolorspace
+%} bdf
+/SpotGF_Multitone_GetStepsInfo
+{
+SGFType 1 eq
+{
+/ArrayIndex MarkerIndex def
+}
+{
+/ArrayIndex NTotalFoils MarkerIndex sub 1 sub def
+}ifelse
+ArrayIndex NTotalFoils 1 sub eq %only one foil left
+{
+100 SFoilPositions ArrayIndex get sub SNumSteps mul 100 div
+/NMultiSteps xdf
+}
+{
+SFoilPositions ArrayIndex get
+SFoilPositions ArrayIndex 1 add get
+exch sub SNumSteps mul 100 div
+/NMultiSteps xdf
+}ifelse
+} bdf
+/SpotGF_Multitone_SetStepColor
+{
+SGFType 1 eq
+{
+/MultiToStep MultiStepsIndex NMultiSteps div def
+/MultiFromStep 1 MultiToStep sub def
+/ArrayIndex MarkerIndex def
+}
+{
+/MultiFromStep MultiStepsIndex NMultiSteps div def
+/MultiToStep 1 MultiFromStep sub def
+/ArrayIndex NTotalFoils MarkerIndex sub 1 sub def
+}ifelse
+MultiToStep SBoostPos ge
+{
+/MultiToStep 1.0 def
+}
+{
+/MultiToStep MultiToStep SBoostPos div def
+}ifelse
+MultiFromStep SBoostPos ge
+{
+/MultiFromStep 1.0 def
+}
+{
+/MultiFromStep MultiFromStep SBoostPos div def
+}ifelse
+ArrayIndex NTotalFoils 1 sub eq %only one foil left
+{
+/SubArray STotalFoils ArrayIndex 3 mul 3 getinterval def
+SubArray 0 get 0 eq
+{ % monotone spot color
+STotalTintValues ArrayIndex 2 mul get MultiFromStep mul
+}
+{ % Spectratone spot color
+STotalTintValues ArrayIndex 2 mul get MultiFromStep mul
+STotalTintValues ArrayIndex 2 mul 1 add get MultiFromStep mul
+}ifelse
+}
+{
+/SubArray STotalFoils ArrayIndex 3 mul 6 getinterval def
+SubArray 0 get 0 eq
+{ % 1st monotone spot color
+STotalTintValues ArrayIndex 2 mul get MultiFromStep mul
+}
+{ % 1st Spectratone spot color
+STotalTintValues ArrayIndex 2 mul get MultiFromStep mul
+STotalTintValues ArrayIndex 2 mul 1 add get MultiFromStep mul
+}ifelse
+SubArray 3 get 0 eq
+{ % 2nd monotone spot color
+STotalTintValues ArrayIndex 2 mul 2 add get MultiToStep mul
+}
+{ % 2nd Spectratone spot color
+STotalTintValues ArrayIndex 2 mul 2 add get MultiToStep mul
+STotalTintValues ArrayIndex 2 mul 3 add get MultiToStep mul
+}ifelse
+}ifelse
+setcolor       
+}bdf
+/SpotGF_Multitone_SetStartColor
+{
+SGFType 1 eq
+{
+/SubArray STotalFoils 0 3 getinterval def
+SubArray 0 get 0 eq
+{% monotone color
+[/DeviceN [ SubArray 1 get ] SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse {pop SAltStartCMYK aload pop}] setcolorspace
+STotalTintValues 0 get setcolor
+}
+{ %duotone color
+[/DeviceN [ SubArray 1 get SubArray 2 get ] SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse {pop pop SAltStartCMYK aload pop}] setcolorspace
+STotalTintValues 0 get
+STotalTintValues 1 get
+setcolor
+}ifelse
+}
+{
+/StartColor SFoilPositions length 1 sub def
+SFoilPositions StartColor get 100 eq
+{
+/SubArray STotalFoils StartColor 3 mul 3 getinterval def
+SubArray 0 get 0 eq
+{% monotone color
+[/DeviceN [ SubArray 1 get ] SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse {pop SAltStartCMYK aload pop}] setcolorspace
+STotalTintValues StartColor 2 mul get setcolor
+}
+{ %duotone color
+[/DeviceN [ SubArray 1 get SubArray 2 get ] SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse {pop pop SAltStartCMYK aload pop}] setcolorspace
+STotalTintValues StartColor 2 mul get
+STotalTintValues StartColor 2 mul 1 add get
+setcolor
+}ifelse
+}
+{%last color is white
+1.0 1.0 1.0 setrgbcolor
+}ifelse
+}ifelse
+}bdf
+%/SpotGF_Multitone_SetStartColor
+%{
+%SGFType 1 eq
+%{
+%/SubArray STotalFoils 0 3 getinterval def
+%SubArray 0 get 0 eq
+%{% monotone color
+%[/DeviceN [ SubArray 1 get ] /DeviceCMYK {pop SAltStartCMYK aload pop}] setcolorspace
+%STotalTintValues 0 get setcolor
+%}
+%{ %duotone color
+%[/DeviceN [ SubArray 1 get SubArray 2 get ] /DeviceCMYK {pop pop SAltStartCMYK aload pop}] setcolorspace
+%STotalTintValues 0 get
+%STotalTintValues 1 get
+%setcolor
+%}ifelse
+%}
+%{
+%/StartColor SFoilPositions length 1 sub def
+%SFoilPositions StartColor get 100 eq
+%{
+%/SubArray STotalFoils StartColor 3 mul 3 getinterval def
+%SubArray 0 get 0 eq
+%{% monotone color
+%[/DeviceN [ SubArray 1 get ] /DeviceCMYK {pop SAltStartCMYK aload pop}] setcolorspace
+%STotalTintValues StartColor 2 mul get setcolor
+%}
+%{ %duotone color
+%[/DeviceN [ SubArray 1 get SubArray 2 get ] /DeviceCMYK {pop pop SAltStartCMYK aload pop}] setcolorspace
+%STotalTintValues StartColor 2 mul get
+%STotalTintValues StartColor 2 mul 1 add get
+%setcolor
+%}ifelse
+%}
+%{%last color is white
+%1.0 1.0 1.0 setrgbcolor
+%}ifelse
+%}ifelse
+%}bdf
+/SpotGF_Mulitione_SetEndColor
+{
+SGFType 1 eq
+{
+/EndColor SFoilPositions length 1 sub def
+SFoilPositions EndColor get 100 eq
+{
+/SubArray STotalFoils EndColor 3 mul 3 getinterval def
+SubArray 0 get 0 eq
+{% monotone color
+[/DeviceN [ SubArray 1 get ] SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse {pop SAltEndCMYK aload pop}] setcolorspace
+STotalTintValues EndColor 2 mul get setcolor
+}
+{ %duotone color
+[/DeviceN [ SubArray 1 get SubArray 2 get ] SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse {pop pop SAltEndCMYK aload pop}] setcolorspace
+STotalTintValues EndColor 2 mul get
+STotalTintValues EndColor 2 mul 1 add get
+setcolor
+}ifelse
+}
+{%last color is white
+1.0 1.0 1.0 setrgbcolor
+}ifelse
+}
+{
+/SubArray STotalFoils 0 3 getinterval def
+SubArray 0 get 0 eq
+{% monotone color
+[/DeviceN [ SubArray 1 get ] SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse {pop SAltEndCMYK aload pop}] setcolorspace
+STotalTintValues 0 get setcolor
+}
+{ %duotone color
+[/DeviceN [ SubArray 1 get SubArray 2 get ] SLColorSpace 0 eq {/DeviceCMYK }{/DeviceRGB }ifelse {pop pop SAltEndCMYK aload pop}] setcolorspace
+STotalTintValues 0 get
+STotalTintValues 1 get
+setcolor
+}ifelse
+}ifelse
+}bdf
+%/SpotGF_Mulitione_SetEndColor
+%{
+%SGFType 1 eq
+%{
+%/EndColor SFoilPositions length 1 sub def
+%SFoilPositions EndColor get 100 eq
+%{
+%/SubArray STotalFoils EndColor 3 mul 3 getinterval def
+%SubArray 0 get 0 eq
+%{% monotone color
+%[/DeviceN [ SubArray 1 get ] /DeviceCMYK {pop SAltEndCMYK aload pop}] setcolorspace
+%STotalTintValues EndColor 2 mul get setcolor
+%}
+%{ %duotone color
+%[/DeviceN [ SubArray 1 get SubArray 2 get ] /DeviceCMYK {pop pop SAltEndCMYK aload pop}] setcolorspace
+%STotalTintValues EndColor 2 mul get
+%STotalTintValues EndColor 2 mul 1 add get
+%setcolor
+%}ifelse
+%}
+%{%last color is white
+%1.0 1.0 1.0 setrgbcolor
+%}ifelse
+%}
+%{
+%/SubArray STotalFoils 0 3 getinterval def
+%SubArray 0 get 0 eq
+%{% monotone color
+%[/DeviceN [ SubArray 1 get ] /DeviceCMYK {pop SAltEndCMYK aload pop}] setcolorspace
+%STotalTintValues 0 get setcolor
+%}
+%{ %duotone color
+%[/DeviceN [ SubArray 1 get SubArray 2 get ] /DeviceCMYK {pop pop SAltEndCMYK aload pop}] setcolorspace
+%STotalTintValues 0 get
+%STotalTintValues 1 get
+%setcolor
+%}ifelse
+%}ifelse
+%}bdf
+/SpotGF_Multitone_Smooth
+{
+/MarkerIndex 0 def
+SpotGF_Multitone_SetStartColor
+SpotGF_Start
+0 1 NTotalFoils 1 sub
+{
+/MarkerIndex xdf
+SpotGF_Multitone_CurAlt
+SpotGF_Multitone_SetColorSpace
+SpotGF_Multitone_GetStepsInfo
+0 1 NMultiSteps 1 sub
+{
+/MultiStepsIndex xdf
+SpotGF_Multitone_SetStepColor
+SpotGF_FillStep
+SpotGF_TranslateStep
+} for
+} for
+SpotGF_Mulitione_SetEndColor
+SpotGF_End
+} bdf
+/WF {BlueFill GreenFill RedFill setrgbcolor eofill} bdf
+/f {closepath F} bdf
+/Wf {closepath WF} bdf
+/B {gsave F grestore} bdf
+/NewB {gsave NewF grestore} bdf
+/WB {gsave WF grestore} bdf
+/b {closepath B} bdf
+/Wb {closepath WB} bdf
+/S {BlueLine GreenLine RedLine setrgbcolor stroke} bdf
+/s {closepath S} bdf
+2 PRset
+/GOldLinearSet
+{
+/FType 2 def
+/GbSmooth xdf
+/GRepNum xdf
+/GRepType xdf
+/GDir xdf
+/GSlant xdf
+/GAng xdf
+/GScaleY xdf
+/GScaleX xdf
+/GOriginY xdf
+/GOriginX xdf
+/GNewLinearType xdf
+/GType xdf
+/GNumSteps xdf
+/GColArray xdf
+GRepType 1 eq {/GRepNum 1 def} if
+} bdf
+/G
+{
+/FType 2 def
+/GbSmooth xdf
+/GRepNum xdf
+/GRepType xdf
+/GDir xdf
+/Gty xdf
+/Gtx xdf
+/Gr22 xdf
+/Gr21 xdf
+/Gr12 xdf
+/Gr11 xdf
+/GNewLinearType xdf
+/GType xdf
+/GNumSteps xdf
+/GColArray xdf
+GRepType 1 eq {/GRepNum 1 def} if
+} bdf
+/DistBtwPts
+{
+3 -1 roll
+2 1 roll
+sub
+dup
+mul
+3 1 roll
+sub
+dup
+mul
+add
+sqrt
+ceiling
+cvi
+} bdf
+/GRtConicalRadius
+{
+pathbbox
+0 0 DistBtwPts
+3 1 roll
+0 0 DistBtwPts
+Max
+pathbbox
+exch
+3 -1 roll
+0 0 DistBtwPts
+3 1 roll
+0 0 DistBtwPts
+Max
+Max
+} bdf
+/SepTintProc
+{
+/blue xdf
+/green xdf
+/red xdf
+/tint xdf
+/1-t 1 tint sub def
+red tint mul 1-t add
+green tint mul 1-t add
+blue tint mul 1-t add
+}bdf
+/SepCMYKTintProc
+{
+/slblack xdf
+/slyellow xdf
+/slmagenta xdf
+/slcyan xdf
+/tint xdf
+slcyan tint mul
+slmagenta tint mul 
+slyellow tint mul 
+slblack tint mul 
+}bdf
+/SLLandscape
+{
+%userdict /InitRIP known
+false
+{
+userdict begin
+statusdict begin
+[{
+userdict /DefaultCTM.rotation get 0 eq {1}{2}ifelse
+printer_desc begin
+0 BBoxInches 3 -1 roll get 72 mul translate
+end
+} stopped cleartomark
+end
+end
+270 rotate
+}
+{
+0 -1 1 0 0 6 -1 roll 6 array astore concat
+%old code 0 currentpagedevice /PageSize get 1 get translate
+%old code 270 rotate
+} ifelse
+}bdf
+/PaintAllPlanes
+{
+/$op$ exch def
+currentoverprint
+true setoverprint
+[ {
+1 1 statusdict begin printer_desc begin numplanes end end
+{
+statusdict begin printer_desc begin planes end end exch get /$Sep$ exch def
+save
+[/Separation null /DeviceGray {}] dup $Sep$ 1 exch put
+setcolorspace
+$op$ load exec
+restore
+} for
+} stopped cleartomark
+setoverprint
+}bdf
+end %Signlab5Dict
+%%EndProlog
+%%EndResource
+%%BeginSetup
+/setflat {pop} def
+Signlab5Dict begin userdict begin
+/SL_XT 0 def
+/SL_YT 0 def
+SL_XT SL_YT translate
+1.000000 /SL_XS exch def
+1.000000 /SL_YS exch def
+SL_XS SL_YS scale
+%%BeginFeature: *SetClearColor
+/numplanes where
+{
+pop
+/setclearcolor
+{
+/numplanes where pop begin
+planes numplanes get
+end
+/clearspot exch def
+[/Separation clearspot /DeviceRGB {1 1 1 SepTintProc} ] setcolorspace
+0 setcolor
+} def
+}
+{
+/setclearcolor {0 0 0 0 setcmykcolor} def
+} ifelse
+%%EndFeature
+n
+/SL_WIDTH 1583.900622 def
+/SL_HEIGHT 576.157109 def
+/SL_XTILE 36.049680 def
+/SL_YTILE 1061.589206 def
+gsave %For clipping to the tile
+36.049680 485.432098 m
+36.049680 1061.589206 l
+1619.950302 1061.589206 l
+1619.950302 485.432098 l
+36.049680 485.432098  l
+closepath
+clip %to the tile
+n
+%%EndSetup
+closepath
+476.894 962.01 m
+539.118 962.01 l
+545.305 961.922 551.736 960.39 558.294 954.354 c
+561.378 951.355 563.198 948.424 564.774 945.232 c
+565.246 944.264 565.631 943.375 565.995 942.479 c
+566.359 941.582 566.701 940.676 567.102 939.457 c
+567.502 938.237 567.96 936.703 568.36 935.155 c
+571.081 924.288 571.643 912.339 571.5 900.887 c
+571.075 878.345 567.968 855.629 561.545 833.136 c
+558.884 824.299 555.828 815.494 550.528 806.485 c
+549.644 805.003 548.709 803.552 547.761 802.198 c
+546.813 800.844 545.852 799.586 544.833 798.377 c
+542.773 795.934 540.681 793.902 538.664 792.265 c
+537.643 791.429 536.59 790.633 535.251 789.759 c
+532.44 787.902 528.774 786.074 525.38 785.049 c
+521.821 783.938 518.199 783.393 514.572 783.39 c
+494.078 783.39 l
+482.033 678.001 l
+444.434 678.001 l
+476.894 962.01 l
+closepath
+500.654 840.928 m
+509.827 840.928 l
+510.905 840.928 511.985 840.996 513.05 841.158 c
+514.116 841.32 515.168 841.57 515.998 841.809 c
+518.148 842.452 519.594 843.182 521.393 844.496 c
+524.582 846.849 526.84 850.628 528.304 853.963 c
+529.606 856.897 530.79 860.589 531.6 864.161 c
+531.899 865.471 532.164 866.812 532.401 868.157 c
+532.639 869.503 532.849 870.854 533.054 872.838 c
+533.492 876.926 533.752 882.817 533.182 887.918 c
+532.981 889.905 532.71 891.907 532.165 893.907 c
+531.946 894.707 531.684 895.495 531.45 896.118 c
+530.835 897.717 530.247 898.756 529.111 900.133 c
+528.789 900.504 528.444 900.842 528.08 901.159 c
+525.554 903.351 521.826 904.299 518.555 904.278 c
+507.895 904.278 l
+500.654 840.928 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+600.764 962.01 m
+638.28 962.01 l
+605.82 678.001 l
+568.304 678.001 l
+600.764 962.01 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+665.632 962.01 m
+684.989 961.994 704.341 962.063 723.702 961.962 c
+728.132 961.769 732.466 961.132 737.029 958.948 c
+738.187 958.38 739.298 957.719 740.221 957.103 c
+741.143 956.487 741.877 955.917 742.594 955.327 c
+743.311 954.736 744.011 954.125 744.883 953.249 c
+745.754 952.373 746.798 951.233 747.768 950.033 c
+748.738 948.833 749.634 947.572 750.529 946.151 c
+751.424 944.731 752.319 943.15 753.13 941.528 c
+754.667 938.44 755.853 935.405 756.789 932.624 c
+757.238 931.301 757.662 929.969 758.168 928.175 c
+759.217 924.451 760.434 919.455 761.186 914.994 c
+765.573 889.869 764.639 864.643 762.775 839.437 c
+760.401 812.819 757.309 786.197 750.857 759.495 c
+746.101 740.921 740.071 721.812 728.278 703.126 c
+726.08 699.758 723.537 696.19 720.278 692.75 c
+719.421 691.835 718.54 690.941 717.215 689.783 c
+715.89 688.625 714.12 687.204 712.249 685.928 c
+710.378 684.652 708.407 683.522 706.357 682.563 c
+704.307 681.603 702.18 680.814 700.64 680.285 c
+699.1 679.757 698.148 679.491 697.192 679.242 c
+694.338 678.485 691.571 678.001 688.785 678.001 c
+633.172 678.001 l
+665.632 962.01 l
+closepath
+695.715 897.691 m
+677.979 742.513 l
+683.012 742.597 688.025 742.226 693.08 742.847 c
+694.709 743.082 696.392 743.466 698.035 744.169 c
+698.83 744.511 699.594 744.922 700.224 745.308 c
+701.651 746.214 702.311 746.76 703.384 747.754 c
+703.974 748.314 704.679 749.044 705.337 749.815 c
+709.929 755.376 712.318 762.102 714.253 768.311 c
+720.311 789.454 722.381 810.654 724.426 831.858 c
+725.593 846.948 727.034 862.029 724.835 877.15 c
+724.329 880.2 723.485 883.684 721.954 886.877 c
+721.512 887.786 721.012 888.668 720.525 889.421 c
+719.63 890.8 718.7 891.902 717.411 893.07 c
+716.828 893.591 716.21 894.074 715.565 894.518 c
+712.474 896.64 708.685 897.713 705.053 897.691 c
+695.715 897.691 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+951.127 831.541 m
+933.579 678.001 l
+883.497 678.001 l
+881.445 706.591 880.006 735.137 873.727 763.849 c
+871.647 773.058 869.062 782.173 864.882 791.346 c
+863.165 795.172 860.802 799.555 857.687 804.075 c
+856.088 806.385 854.35 808.6 852.553 810.665 c
+850.757 812.73 848.901 814.645 846.951 816.458 c
+845.001 818.27 842.958 819.98 841.222 821.347 c
+839.487 822.715 838.061 823.738 836.614 824.733 c
+835.168 825.727 833.702 826.692 831.95 827.765 c
+828.301 829.99 823.92 832.429 819.808 834.361 c
+810.636 838.799 801.314 842.34 792.024 845.913 c
+809.57 853.752 827.062 862.079 844.508 865.894 c
+846.737 866.347 848.985 866.704 850.686 866.923 c
+854.009 867.336 855.739 867.347 858.184 867.301 c
+862.033 867.154 865.421 866.612 869.333 864.914 c
+870.636 864.34 871.891 863.656 873.095 862.879 c
+874.299 862.102 875.452 861.232 876.539 860.287 c
+878.607 858.478 880.298 856.606 881.6 854.952 c
+882.23 854.158 882.84 853.348 883.537 852.342 c
+884.234 851.336 885.018 850.134 885.765 848.91 c
+886.511 847.685 887.221 846.438 888.032 844.896 c
+889.71 841.704 891.585 837.711 893.085 834.032 c
+895.26 828.669 897.322 823.288 899.275 817.889 c
+926.734 1056.3 l
+1009.84 1056.3 l
+1019.21 1056.21 1028.59 1055.89 1038.28 1050.23 c
+1039.7 1049.39 1041.06 1048.46 1042.37 1047.46 c
+1043.68 1046.46 1044.94 1045.39 1046.37 1043.9 c
+1047.8 1042.42 1049.4 1040.53 1050.79 1038.49 c
+1052.18 1036.45 1053.35 1034.26 1054.2 1032.5 c
+1055.9 1028.92 1056.57 1026.75 1057.47 1023.9 c
+1057.91 1022.45 1058.32 1020.93 1058.7 1019.4 c
+1059.08 1017.87 1059.43 1016.34 1059.88 1013.87 c
+1060.33 1011.41 1060.88 1008.02 1061.29 1004.62 c
+1062.11 997.748 1062.41 990.755 1062.44 983.708 c
+1062.45 980.152 1062.4 976.595 1062.11 971.405 c
+1061.82 966.215 1061.3 959.391 1060.56 952.592 c
+1058.52 934.221 1055.22 916.243 1048.79 897.828 c
+1047.95 895.379 1047 892.971 1046.01 890.579 c
+1045.03 888.187 1043.98 885.82 1042.93 883.605 c
+1041.88 881.389 1040.83 879.324 1039.72 877.287 c
+1038.62 875.251 1037.46 873.243 1036.38 871.443 c
+1035.29 869.644 1034.27 868.054 1033.21 866.49 c
+1032.16 864.927 1031.06 863.39 1030.09 862.096 c
+1029.12 860.802 1028.28 859.751 1027.4 858.731 c
+1025.67 856.72 1023.94 855.005 1022.31 853.629 c
+1021.51 852.941 1020.69 852.276 1019.42 851.341 c
+1018.15 850.406 1016.43 849.201 1014.67 848.079 c
+1012.9 846.957 1011.08 845.918 1009.21 844.96 c
+1010.43 843.918 1011.6 842.827 1012.72 841.687 c
+1013.84 840.547 1014.91 839.359 1015.67 838.476 c
+1017.19 836.71 1017.76 835.884 1018.62 834.607 c
+1020.1 832.32 1020.95 830.383 1021.8 828.049 c
+1027.44 810.2 1029.84 792.224 1032.97 774.27 c
+1043.33 713.822 1053.82 653.373 1064.36 592.932 c
+1003.95 678.001 l
+992.313 723.83 980.649 769.636 969.041 815.487 c
+967.856 819.509 967.229 823.547 963.452 827.771 c
+962.525 828.74 961.528 829.495 960.509 830.087 c
+958.616 831.184 957.104 831.52 955.53 831.541 c
+951.127 831.541 l
+closepath
+989.99 979.92 m
+968.086 979.92 l
+959.297 903.021 l
+980.32 903.021 l
+980.779 903.021 981.237 903.073 981.69 903.145 c
+982.143 903.218 982.591 903.321 983.397 903.58 c
+985.054 904.112 987.718 905.127 989.915 906.171 c
+992.134 907.288 994.357 907.984 996.639 909.975 c
+997.036 910.306 997.421 910.65 997.903 911.142 c
+998.385 911.635 998.963 912.275 999.499 912.949 c
+1001.36 915.309 1002.73 917.984 1003.84 920.561 c
+1004.27 921.565 1004.7 922.648 1005.1 923.739 c
+1005.5 924.83 1005.89 925.928 1006.42 927.783 c
+1006.94 929.639 1007.62 932.251 1008.16 934.891 c
+1009.58 942.242 1010.24 949.717 1009.97 957.164 c
+1009.9 958.735 1009.76 960.303 1009.64 961.438 c
+1009.4 963.545 1009.16 964.553 1008.82 966.027 c
+1007.97 969.226 1006.78 972.627 1003.45 975.691 c
+1002.32 976.674 1000.88 977.567 999.525 978.162 c
+998.8 978.483 998.052 978.75 997.075 979.011 c
+995.061 979.562 992.39 979.952 989.99 979.92 c
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1090.06 962.01 m
+1190.38 962.01 l
+1183.45 901.372 l
+1120.65 901.372 l
+1115.49 856.233 l
+1173.75 856.233 l
+1167.13 798.308 l
+1108.87 798.308 l
+1102.47 742.32 l
+1167.09 742.32 l
+1159.74 678.001 l
+1057.6 678.001 l
+1090.06 962.01 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1212.2 962.01 m
+1274.42 962.01 l
+1280.61 961.922 1287.04 960.39 1293.6 954.354 c
+1296.68 951.355 1298.5 948.424 1300.08 945.232 c
+1300.55 944.264 1300.94 943.375 1301.3 942.479 c
+1301.66 941.582 1302.01 940.676 1302.41 939.457 c
+1302.81 938.237 1303.26 936.703 1303.67 935.155 c
+1306.39 924.288 1306.95 912.339 1306.8 900.887 c
+1306.38 878.345 1303.27 855.629 1296.85 833.136 c
+1294.19 824.299 1291.13 815.494 1285.83 806.485 c
+1284.95 805.003 1284.01 803.552 1283.07 802.198 c
+1282.12 800.844 1281.16 799.586 1280.14 798.377 c
+1278.08 795.934 1275.99 793.902 1273.97 792.265 c
+1272.95 791.429 1271.9 790.633 1270.56 789.759 c
+1267.74 787.902 1264.08 786.074 1260.68 785.049 c
+1257.13 783.938 1253.5 783.393 1249.88 783.39 c
+1229.38 783.39 l
+1217.34 678.001 l
+1179.74 678.001 l
+1212.2 962.01 l
+closepath
+1235.96 840.928 m
+1245.13 840.928 l
+1246.21 840.928 1247.29 840.996 1248.36 841.158 c
+1249.42 841.32 1250.47 841.57 1251.3 841.809 c
+1253.45 842.452 1254.9 843.182 1256.7 844.496 c
+1259.89 846.849 1262.14 850.628 1263.61 853.963 c
+1264.91 856.897 1266.1 860.589 1266.9 864.161 c
+1267.2 865.471 1267.47 866.812 1267.71 868.157 c
+1267.94 869.503 1268.15 870.854 1268.36 872.838 c
+1268.8 876.926 1269.06 882.817 1268.49 887.918 c
+1268.29 889.905 1268.01 891.907 1267.47 893.907 c
+1267.25 894.707 1266.99 895.495 1266.75 896.118 c
+1266.14 897.717 1265.55 898.756 1264.42 900.133 c
+1264.09 900.504 1263.75 900.842 1263.38 901.159 c
+1260.86 903.351 1257.13 904.299 1253.86 904.278 c
+1243.2 904.278 l
+1235.96 840.928 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1367.58 724.884 m
+1325.08 724.884 l
+1313.82 678.001 l
+1275.6 678.001 l
+1353.59 962.01 l
+1394.42 962.01 l
+1407.48 678.001 l
+1368.28 678.001 l
+1367.58 724.884 l
+closepath
+1366.83 786.296 m
+1365.13 888.392 l
+1340.23 786.296 l
+1366.83 786.296 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1453.33 962.01 m
+1490.84 962.01 l
+1458.38 678.001 l
+1420.87 678.001 l
+1453.33 962.01 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1485.74 678.001 m
+1518.2 962.01 l
+1540.64 961.984 1563.08 962.095 1585.52 961.934 c
+1592.32 961.623 1599.1 960.729 1606.22 954.589 c
+1608.95 952.252 1611.4 948.95 1612.84 946.268 c
+1613.82 944.481 1614.64 942.588 1615.36 940.634 c
+1615.73 939.618 1616.07 938.591 1616.46 937.205 c
+1616.85 935.818 1617.29 934.073 1617.67 932.313 c
+1620.8 916.728 1620.38 900.24 1618.62 884.137 c
+1616.89 868.558 1614.04 853.292 1607.75 837.63 c
+1606.34 834.188 1604.78 830.848 1603.05 827.646 c
+1602.22 826.115 1601.36 824.606 1600.54 823.252 c
+1599.73 821.898 1598.96 820.701 1598.17 819.523 c
+1597.38 818.346 1596.55 817.189 1595.82 816.214 c
+1595.1 815.238 1594.46 814.444 1593.8 813.674 c
+1592.49 812.155 1591.19 810.861 1589.96 809.823 c
+1589.35 809.304 1588.73 808.802 1587.78 808.101 c
+1586.83 807.4 1585.54 806.5 1584.21 805.663 c
+1582.89 804.827 1581.52 804.054 1580.12 803.345 c
+1581.03 802.569 1581.91 801.755 1582.76 800.902 c
+1583.6 800.049 1584.4 799.157 1584.97 798.492 c
+1586.11 797.164 1586.54 796.532 1587.19 795.565 c
+1589.6 791.848 1590.47 787.8 1591.53 783.801 c
+1593.47 775.982 1595.29 768.131 1596.17 760.297 c
+1604.9 678.001 l
+1562.6 678.001 l
+1558.95 709.216 1555.42 740.424 1551.64 771.644 c
+1550.88 776.546 1550.42 781.215 1548.38 786.357 c
+1547.61 788.041 1546.76 789.754 1544.65 791.494 c
+1542.02 793.679 1539.24 793.201 1536.51 793.271 c
+1523.34 678.001 l
+1485.74 678.001 l
+closepath
+1542.64 846.934 m
+1558.43 846.934 l
+1558.77 846.934 1559.11 846.973 1559.45 847.027 c
+1560.21 847.13 1561.6 847.625 1563.08 848.199 c
+1565.35 849.144 1567.49 850.016 1569.76 851.442 c
+1570.51 851.982 1571 852.381 1571.64 853.031 c
+1572.51 853.915 1573.34 854.969 1573.99 856.027 c
+1575.32 858.174 1576.18 860.23 1577.02 862.499 c
+1577.32 863.318 1577.6 864.143 1577.99 865.533 c
+1578.39 866.923 1578.89 868.879 1579.29 870.857 c
+1580.37 876.352 1580.8 881.946 1580.59 887.515 c
+1580.54 888.692 1580.44 889.868 1580.35 890.721 c
+1580.15 892.521 1580.02 893.111 1579.75 894.304 c
+1579.61 894.919 1579.42 895.622 1579.18 896.307 c
+1578.94 896.993 1578.65 897.662 1578.39 898.189 c
+1577.73 899.518 1577.12 900.381 1575.95 901.512 c
+1575.07 902.288 1574.5 902.646 1573.66 903.071 c
+1571.93 903.943 1569.79 904.418 1567.79 904.58 c
+1561.61 904.761 1555.42 904.637 1549.24 904.666 c
+1542.64 846.934 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+135.301 486.171 m
+160.672 486.171 l
+162.713 505.794 l
+173.311 505.794 l
+175.352 486.171 l
+201.037 486.171 l
+184.524 585.955 l
+151.657 585.955 l
+135.301 486.171 l
+closepath
+164.146 522.18 m
+168.091 559.286 l
+172.035 522.18 l
+164.146 522.18 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+217.313 585.955 m
+217.313 506.136 l
+217.313 503.401 217.413 500.658 217.705 498.527 c
+217.997 496.395 218.428 494.876 218.856 493.762 c
+219.285 492.648 219.712 491.94 220.129 491.358 c
+221.083 490.053 221.868 489.437 222.816 488.805 c
+223.342 488.464 223.931 488.143 224.695 487.811 c
+225.459 487.479 226.398 487.137 227.93 486.77 c
+229.463 486.403 231.589 486.012 235.094 485.75 c
+238.599 485.489 243.483 485.358 248.359 485.435 c
+253.24 485.384 258.127 485.522 261.615 485.765 c
+265.103 486.008 267.191 486.356 268.73 486.722 c
+270.269 487.088 271.259 487.473 272.056 487.827 c
+273.964 488.697 275.235 489.481 276.631 491.34 c
+277.031 491.893 277.432 492.558 277.858 493.664 c
+278.284 494.77 278.734 496.316 279.032 498.47 c
+279.33 500.625 279.475 503.386 279.405 506.136 c
+279.405 585.955 l
+252.157 585.955 l
+252.157 505.039 l
+252.125 504.243 252.047 503.459 251.139 502.701 c
+249.906 501.854 248.328 501.655 246.376 502.286 c
+245.812 502.507 245.241 503.118 245.013 503.708 c
+244.707 504.309 244.552 505.542 244.56 506.754 c
+244.56 585.955 l
+217.313 585.955 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+309.636 486.171 m
+336.727 486.171 l
+336.727 569.325 l
+350.539 569.325 l
+350.539 585.955 l
+295.824 585.955 l
+295.824 569.325 l
+309.636 569.325 l
+309.636 486.171 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+370.254 565.868 m
+370.254 506.381 l
+370.254 503.614 370.355 500.837 370.651 498.68 c
+370.946 496.522 371.383 494.983 371.817 493.855 c
+372.251 492.727 372.684 492.01 373.106 491.421 c
+374.072 490.101 374.866 489.478 375.824 488.838 c
+376.357 488.493 376.954 488.167 377.726 487.832 c
+378.497 487.497 379.444 487.152 380.979 486.784 c
+382.514 486.415 384.638 486.023 388.125 485.759 c
+391.611 485.496 396.46 485.361 401.3 485.435 c
+406.135 485.387 410.976 485.526 414.445 485.771 c
+417.914 486.015 420.011 486.365 421.558 486.734 c
+423.106 487.102 424.105 487.49 424.909 487.847 c
+426.838 488.727 428.126 489.522 429.536 491.401 c
+429.941 491.96 430.348 492.633 430.779 493.753 c
+431.211 494.873 431.667 496.44 431.969 498.621 c
+432.27 500.802 432.417 503.598 432.346 506.381 c
+432.346 565.868 l
+432.346 568.586 432.244 571.313 431.953 573.433 c
+431.661 575.554 431.231 577.068 430.802 578.18 c
+430.373 579.292 429.946 580.001 429.526 580.585 c
+428.566 581.897 427.775 582.518 426.819 583.156 c
+426.287 583.501 425.692 583.825 424.919 584.161 c
+424.146 584.496 423.195 584.843 421.649 585.213 c
+420.103 585.584 417.962 585.979 414.443 586.244 c
+410.925 586.508 406.03 586.644 401.144 586.569 c
+396.798 586.652 392.447 586.566 389.174 586.365 c
+385.901 586.163 383.707 585.846 382.012 585.508 c
+380.318 585.171 379.123 584.812 378.215 584.482 c
+377.307 584.153 376.686 583.852 376.155 583.556 c
+375.18 583.006 374.432 582.454 373.641 581.606 c
+373.286 581.22 372.947 580.788 372.596 580.228 c
+372.245 579.668 371.881 578.981 371.518 577.913 c
+371.156 576.846 370.796 575.398 370.556 573.326 c
+370.316 571.253 370.254 568.557 370.254 565.868 c
+closepath
+397.502 565.253 m
+397.599 566.355 397.152 567.505 398.018 568.903 c
+399.001 570.053 399.824 569.997 400.87 570.061 c
+401.986 570.019 403.42 570.077 404.374 568.858 c
+404.755 568.255 404.842 568.007 404.985 567.224 c
+405.067 566.7 405.099 565.973 405.099 565.25 c
+405.099 505.04 l
+405.068 504.286 404.98 503.554 404.109 502.831 c
+402.869 501.981 401.278 501.774 399.297 502.41 c
+398.734 502.631 398.178 503.233 397.954 503.814 c
+397.641 504.417 397.491 505.721 397.502 506.999 c
+397.502 565.253 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+479.357 542.249 m
+489.324 486.171 l
+504.768 486.171 l
+514.735 542.249 l
+514.735 486.171 l
+539.315 486.171 l
+539.315 585.955 l
+506.276 585.955 l
+497.124 536.134 l
+487.816 585.955 l
+454.778 585.955 l
+454.778 486.171 l
+479.357 486.171 l
+479.357 542.249 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+559.977 565.868 m
+559.977 506.381 l
+559.977 503.614 560.078 500.837 560.374 498.68 c
+560.669 496.522 561.106 494.983 561.54 493.855 c
+561.974 492.727 562.406 492.01 562.829 491.421 c
+563.795 490.101 564.589 489.478 565.547 488.838 c
+566.08 488.493 566.677 488.167 567.449 487.832 c
+568.22 487.497 569.167 487.152 570.702 486.784 c
+572.237 486.415 574.361 486.023 577.848 485.759 c
+581.334 485.496 586.183 485.361 591.023 485.435 c
+595.857 485.387 600.698 485.526 604.167 485.771 c
+607.636 486.015 609.733 486.365 611.281 486.734 c
+612.829 487.102 613.828 487.49 614.632 487.847 c
+616.56 488.727 617.849 489.522 619.259 491.401 c
+619.664 491.96 620.071 492.633 620.502 493.753 c
+620.934 494.873 621.39 496.44 621.692 498.621 c
+621.993 500.802 622.14 503.598 622.069 506.381 c
+622.069 565.868 l
+622.069 568.586 621.967 571.313 621.676 573.433 c
+621.384 575.554 620.954 577.068 620.525 578.18 c
+620.096 579.292 619.668 580.001 619.249 580.585 c
+618.289 581.897 617.498 582.518 616.542 583.156 c
+616.01 583.501 615.414 583.825 614.641 584.161 c
+613.868 584.496 612.918 584.843 611.372 585.213 c
+609.826 585.584 607.684 585.979 604.166 586.244 c
+600.648 586.508 595.753 586.644 590.867 586.569 c
+586.521 586.652 582.169 586.566 578.897 586.365 c
+575.624 586.163 573.43 585.846 571.735 585.508 c
+570.041 585.171 568.846 584.812 567.938 584.482 c
+567.03 584.153 566.409 583.852 565.878 583.556 c
+564.903 583.006 564.155 582.454 563.364 581.606 c
+563.008 581.22 562.67 580.788 562.319 580.228 c
+561.967 579.668 561.603 578.981 561.241 577.913 c
+560.879 576.846 560.519 575.398 560.279 573.326 c
+560.039 571.253 559.977 568.557 559.977 565.868 c
+closepath
+587.224 565.253 m
+587.322 566.355 586.875 567.505 587.741 568.903 c
+588.723 570.053 589.546 569.997 590.593 570.061 c
+591.709 570.019 593.143 570.077 594.097 568.858 c
+594.478 568.255 594.565 568.007 594.708 567.224 c
+594.789 566.7 594.821 565.973 594.821 565.25 c
+594.821 505.04 l
+594.791 504.286 594.703 503.554 593.832 502.831 c
+592.592 501.981 591.001 501.774 589.02 502.41 c
+588.457 502.631 587.901 503.233 587.677 503.814 c
+587.364 504.417 587.214 505.721 587.224 506.999 c
+587.224 565.253 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+654.703 486.171 m
+681.793 486.171 l
+681.793 569.325 l
+695.606 569.325 l
+695.606 585.955 l
+640.891 585.955 l
+640.891 569.325 l
+654.703 569.325 l
+654.703 486.171 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+715.404 486.171 m
+742.495 486.171 l
+742.495 585.955 l
+715.404 585.955 l
+715.404 486.171 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+779.195 486.171 m
+809.237 486.171 l
+826.065 585.955 l
+800.378 585.955 l
+794.218 520.972 l
+788.212 585.955 l
+762.525 585.955 l
+779.195 486.171 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+845.24 486.171 m
+888.34 486.171 l
+888.34 502.556 l
+872.33 502.556 l
+872.33 532.776 l
+888.34 532.776 l
+888.34 549.162 l
+872.33 549.162 l
+872.33 569.693 l
+888.34 569.693 l
+888.34 585.955 l
+845.24 585.955 l
+845.24 486.171 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+951.824 526.35 m
+951.824 506.135 l
+951.824 503.198 951.94 500.245 952.261 498.126 c
+952.582 496.007 953.048 494.722 953.483 493.736 c
+953.917 492.75 954.321 492.062 954.733 491.485 c
+955.676 490.19 956.51 489.528 957.48 488.881 c
+958.019 488.531 958.62 488.203 959.367 487.875 c
+960.113 487.547 961.005 487.22 962.562 486.843 c
+964.118 486.467 966.338 486.041 969.888 485.761 c
+973.437 485.481 978.315 485.346 983.183 485.435 c
+988.182 485.335 993.192 485.444 996.716 485.681 c
+1000.24 485.917 1002.28 486.281 1003.77 486.664 c
+1005.26 487.046 1006.21 487.447 1006.97 487.819 c
+1008.34 488.485 1009.27 489.101 1010.29 490.139 c
+1010.72 490.588 1011.13 491.08 1011.49 491.613 c
+1011.85 492.146 1012.17 492.722 1012.49 493.472 c
+1012.8 494.223 1013.13 495.148 1013.34 496.616 c
+1013.55 498.083 1013.66 500.092 1013.6 502.088 c
+1013.6 524.783 l
+1013.6 526.52 1013.45 528.262 1013.18 529.663 c
+1012.9 531.063 1012.51 532.122 1012.07 533.042 c
+1011.2 534.839 1010.19 536.156 1008.55 537.619 c
+1007.74 538.332 1006.77 539.067 1005.49 539.827 c
+1004.21 540.587 1002.61 541.35 1000.98 542.035 c
+984.345 549.026 l
+983.502 549.38 982.669 549.765 982.066 550.119 c
+981.462 550.474 981.083 550.783 980.784 551.055 c
+980.08 551.705 979.866 552.057 979.596 552.608 c
+979.217 553.32 979.062 554.622 979.071 555.935 c
+979.071 565.373 l
+979.071 566.091 979.108 566.811 979.192 567.338 c
+979.332 568.153 979.503 568.532 979.832 569.032 c
+980.948 570.312 981.787 570.111 982.776 570.183 c
+983.793 570.137 985.2 570.196 986.117 569.012 c
+986.498 568.405 986.576 568.179 986.718 567.387 c
+986.799 566.855 986.825 566.112 986.825 565.373 c
+986.825 551.051 l
+1013.6 551.051 l
+1013.6 572.002 l
+1013.6 573.322 1013.48 574.645 1013.27 575.745 c
+1013.06 576.846 1012.76 577.724 1012.43 578.46 c
+1011.84 579.755 1011.17 580.72 1010.11 581.723 c
+1009.65 582.144 1009.16 582.529 1008.59 582.9 c
+1008.02 583.272 1007.37 583.629 1006.54 583.994 c
+1005.7 584.359 1004.69 584.732 1002.95 585.136 c
+1001.22 585.54 998.774 585.975 995.28 586.255 c
+991.786 586.535 987.245 586.661 982.713 586.569 c
+978.421 586.626 974.123 586.543 971.021 586.373 c
+967.918 586.203 966.011 585.945 964.495 585.677 c
+962.979 585.409 961.854 585.13 960.841 584.793 c
+959.828 584.457 958.928 584.063 958.226 583.696 c
+956.905 582.989 956.202 582.423 955.316 581.472 c
+954.903 581.016 954.475 580.467 954.041 579.695 c
+953.606 578.923 953.165 577.928 952.83 576.821 c
+952.495 575.714 952.267 574.496 952.097 572.672 c
+951.927 570.848 951.824 568.418 951.824 565.99 c
+951.824 554.333 l
+951.824 552.176 952.049 550.009 952.455 548.275 c
+952.861 546.542 953.438 545.24 954.08 544.123 c
+955.331 542.002 956.743 540.396 959.33 538.65 c
+960.573 537.828 962.09 537.028 963.655 536.348 c
+981.708 528.497 l
+982.562 528.169 983.394 527.778 984 527.431 c
+984.606 527.084 984.986 526.781 985.285 526.516 c
+985.993 525.874 986.194 525.54 986.462 525.001 c
+986.85 524.298 986.994 522.947 986.982 521.589 c
+986.982 504.919 l
+986.92 504.111 986.852 503.371 985.487 502.519 c
+984.305 501.899 982.74 501.668 980.978 502.302 c
+980.391 502.53 979.774 503.178 979.531 503.806 c
+979.226 504.417 979.065 505.594 979.071 506.754 c
+979.071 526.35 l
+951.824 526.35 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1036.5 486.171 m
+1079.6 486.171 l
+1079.6 502.556 l
+1063.59 502.556 l
+1063.59 532.776 l
+1079.6 532.776 l
+1079.6 549.162 l
+1063.59 549.162 l
+1063.59 569.693 l
+1079.6 569.693 l
+1079.6 585.955 l
+1036.5 585.955 l
+1036.5 486.171 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1101.42 486.171 m
+1128.67 486.171 l
+1128.67 525.663 l
+1130.11 525.663 l
+1130.87 525.663 1131.62 525.632 1132.2 525.572 c
+1133.35 525.431 1133.95 525.279 1134.72 524.816 c
+1135.22 524.502 1135.6 524.011 1135.82 523.5 c
+1136.13 522.898 1136.28 521.683 1136.27 520.485 c
+1136.27 486.171 l
+1163.51 486.171 l
+1163.51 518.65 l
+1163.51 520.487 1163.39 522.329 1163.16 523.755 c
+1162.92 525.18 1162.59 526.19 1162.25 527.015 c
+1161.91 527.84 1161.56 528.481 1161.2 529.039 c
+1160.51 530.067 1159.75 530.885 1158.63 531.733 c
+1158.11 532.116 1157.54 532.483 1156.85 532.851 c
+1156.16 533.218 1155.36 533.585 1154.4 533.93 c
+1153.44 534.274 1152.31 534.595 1151.17 534.845 c
+1152.49 535.201 1153.78 535.645 1154.86 536.104 c
+1155.94 536.563 1156.81 537.037 1157.55 537.502 c
+1158.86 538.346 1159.81 539.137 1160.81 540.463 c
+1161.24 541.044 1161.65 541.706 1162.08 542.776 c
+1162.5 543.847 1162.95 545.325 1163.23 547.425 c
+1163.51 549.525 1163.63 552.245 1163.51 554.949 c
+1163.51 565.255 l
+1163.51 567.752 1163.41 570.253 1163.22 572.139 c
+1163.03 574.026 1162.77 575.297 1162.38 576.445 c
+1161.98 577.592 1161.46 578.616 1160.95 579.397 c
+1159.74 581.167 1158.95 581.672 1157.89 582.4 c
+1157.28 582.789 1156.56 583.186 1155.5 583.602 c
+1154.44 584.019 1153.06 584.454 1151.4 584.807 c
+1149.73 585.159 1147.8 585.429 1144.58 585.631 c
+1141.35 585.833 1136.83 585.955 1132.31 585.955 c
+1101.42 585.955 l
+1101.42 486.171 l
+closepath
+1136.27 550.781 m
+1136.27 548.085 l
+1136.26 547.405 1136.23 546.749 1135.98 546.115 c
+1135.79 545.463 1135.01 544.844 1134.5 544.691 c
+1133.92 544.483 1133.54 544.405 1132.79 544.326 c
+1132.31 544.28 1131.68 544.253 1131.05 544.256 c
+1130.62 544.234 1129.58 544.372 1128.67 544.375 c
+1128.67 569.693 l
+1130.9 569.693 l
+1131.63 569.693 1132.37 569.668 1132.92 569.615 c
+1133.77 569.525 1134.17 569.416 1134.69 569.206 c
+1135.08 569.033 1135.35 568.861 1135.64 568.473 c
+1135.73 568.358 1135.81 568.221 1135.91 567.969 c
+1136.01 567.716 1136.13 567.347 1136.2 566.731 c
+1136.27 566.115 1136.3 565.251 1136.27 564.393 c
+1136.27 550.781 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1197.14 486.171 m
+1227.18 486.171 l
+1244.01 585.955 l
+1218.32 585.955 l
+1212.16 520.972 l
+1206.15 585.955 l
+1180.47 585.955 l
+1197.14 486.171 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1263.18 486.171 m
+1290.27 486.171 l
+1290.27 585.955 l
+1263.18 585.955 l
+1263.18 486.171 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1313.78 565.868 m
+1313.78 506.381 l
+1313.78 503.614 1313.88 500.837 1314.18 498.68 c
+1314.47 496.522 1314.91 494.983 1315.34 493.855 c
+1315.78 492.727 1316.21 492.01 1316.63 491.421 c
+1317.6 490.101 1318.39 489.478 1319.35 488.838 c
+1319.88 488.493 1320.48 488.167 1321.25 487.832 c
+1322.02 487.497 1322.97 487.152 1324.5 486.784 c
+1326.04 486.415 1328.16 486.023 1331.65 485.759 c
+1335.14 485.496 1339.99 485.361 1344.83 485.435 c
+1349.66 485.387 1354.5 485.526 1357.97 485.771 c
+1361.44 486.015 1363.54 486.365 1365.08 486.734 c
+1366.63 487.102 1367.63 487.49 1368.44 487.847 c
+1370.36 488.727 1371.65 489.522 1373.06 491.401 c
+1373.47 491.96 1373.87 492.633 1374.3 493.753 c
+1374.74 494.873 1375.19 496.44 1375.49 498.621 c
+1375.8 500.802 1375.94 503.598 1375.87 506.381 c
+1375.87 528.68 l
+1348.62 528.68 l
+1348.62 505.285 l
+1348.59 504.455 1348.51 503.643 1347.55 502.835 c
+1346.24 501.949 1344.47 501.658 1342.51 502.616 c
+1342.28 502.775 1342.06 502.962 1341.84 503.269 c
+1341.44 503.879 1341.31 504.222 1341.16 505.03 c
+1341.07 505.565 1341.03 506.284 1341.03 506.999 c
+1341.03 565.251 l
+1341.03 566.032 1341.04 566.816 1341.1 567.377 c
+1341.21 568.22 1341.31 568.553 1341.65 569.052 c
+1342.74 570.236 1343.45 569.981 1344.43 570.06 c
+1345.48 570.012 1346.96 570.08 1347.9 568.858 c
+1348.28 568.255 1348.37 568.007 1348.51 567.224 c
+1348.59 566.7 1348.62 565.973 1348.62 565.25 c
+1348.62 551.909 l
+1375.87 551.909 l
+1375.87 565.868 l
+1375.87 568.6 1375.77 571.34 1375.48 573.469 c
+1375.19 575.598 1374.76 577.116 1374.33 578.229 c
+1373.9 579.342 1373.47 580.05 1373.06 580.632 c
+1372.1 581.937 1371.32 582.554 1370.37 583.188 c
+1369.84 583.529 1369.25 583.851 1368.48 584.183 c
+1367.72 584.516 1366.77 584.86 1365.23 585.228 c
+1363.69 585.597 1361.56 585.99 1358.03 586.253 c
+1354.5 586.515 1349.58 586.647 1344.67 586.569 c
+1339.97 586.609 1335.26 586.486 1331.86 586.271 c
+1328.47 586.056 1326.39 585.749 1324.85 585.425 c
+1323.31 585.101 1322.33 584.759 1321.54 584.448 c
+1319.69 583.706 1318.54 583.087 1317.16 581.651 c
+1316.81 581.269 1316.47 580.844 1316.14 580.311 c
+1315.8 579.778 1315.46 579.138 1315.09 578.067 c
+1314.73 576.997 1314.34 575.496 1314.08 573.389 c
+1313.83 571.282 1313.71 568.57 1313.78 565.868 c
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1398.3 486.171 m
+1441.4 486.171 l
+1441.4 502.556 l
+1425.39 502.556 l
+1425.39 532.776 l
+1441.4 532.776 l
+1441.4 549.162 l
+1425.39 549.162 l
+1425.39 569.693 l
+1441.4 569.693 l
+1441.4 585.955 l
+1398.3 585.955 l
+1398.3 486.171 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+1460.88 526.35 m
+1460.88 506.135 l
+1460.88 503.198 1460.99 500.245 1461.31 498.126 c
+1461.64 496.007 1462.1 494.722 1462.54 493.736 c
+1462.97 492.75 1463.37 492.062 1463.79 491.485 c
+1464.73 490.19 1465.56 489.528 1466.53 488.881 c
+1467.07 488.531 1467.67 488.203 1468.42 487.875 c
+1469.17 487.547 1470.06 487.22 1471.62 486.843 c
+1473.17 486.467 1475.39 486.041 1478.94 485.761 c
+1482.49 485.481 1487.37 485.346 1492.24 485.435 c
+1497.24 485.335 1502.25 485.444 1505.77 485.681 c
+1509.29 485.917 1511.33 486.281 1512.82 486.664 c
+1514.32 487.046 1515.26 487.447 1516.03 487.819 c
+1517.39 488.485 1518.32 489.101 1519.34 490.139 c
+1519.78 490.588 1520.18 491.08 1520.54 491.613 c
+1520.9 492.146 1521.22 492.722 1521.54 493.472 c
+1521.86 494.223 1522.18 495.148 1522.39 496.616 c
+1522.61 498.083 1522.71 500.092 1522.66 502.088 c
+1522.66 524.783 l
+1522.66 526.52 1522.51 528.262 1522.23 529.663 c
+1521.96 531.063 1521.56 532.122 1521.13 533.042 c
+1520.26 534.839 1519.25 536.156 1517.6 537.619 c
+1516.79 538.332 1515.83 539.067 1514.55 539.827 c
+1513.27 540.587 1511.67 541.35 1510.04 542.035 c
+1493.4 549.026 l
+1492.56 549.38 1491.72 549.765 1491.12 550.119 c
+1490.52 550.474 1490.14 550.783 1489.84 551.055 c
+1489.13 551.705 1488.92 552.057 1488.65 552.608 c
+1488.27 553.32 1488.12 554.622 1488.13 555.935 c
+1488.13 565.373 l
+1488.13 566.091 1488.16 566.811 1488.25 567.338 c
+1488.39 568.153 1488.56 568.532 1488.89 569.032 c
+1490 570.312 1490.84 570.111 1491.83 570.183 c
+1492.85 570.137 1494.25 570.196 1495.17 569.012 c
+1495.55 568.405 1495.63 568.179 1495.77 567.387 c
+1495.85 566.855 1495.88 566.112 1495.88 565.373 c
+1495.88 551.051 l
+1522.66 551.051 l
+1522.66 572.002 l
+1522.66 573.322 1522.54 574.645 1522.33 575.745 c
+1522.11 576.846 1521.81 577.724 1521.48 578.46 c
+1520.89 579.755 1520.22 580.72 1519.16 581.723 c
+1518.71 582.144 1518.21 582.529 1517.64 582.9 c
+1517.07 583.272 1516.42 583.629 1515.59 583.994 c
+1514.76 584.359 1513.74 584.732 1512.01 585.136 c
+1510.28 585.54 1507.83 585.975 1504.33 586.255 c
+1500.84 586.535 1496.3 586.661 1491.77 586.569 c
+1487.47 586.626 1483.18 586.543 1480.07 586.373 c
+1476.97 586.203 1475.06 585.945 1473.55 585.677 c
+1472.03 585.409 1470.91 585.13 1469.9 584.793 c
+1468.88 584.457 1467.98 584.063 1467.28 583.696 c
+1465.96 582.989 1465.26 582.423 1464.37 581.472 c
+1463.96 581.016 1463.53 580.467 1463.09 579.695 c
+1462.66 578.923 1462.22 577.928 1461.88 576.821 c
+1461.55 575.714 1461.32 574.496 1461.15 572.672 c
+1460.98 570.848 1460.88 568.418 1460.88 565.99 c
+1460.88 554.333 l
+1460.88 552.176 1461.1 550.009 1461.51 548.275 c
+1461.91 546.542 1462.49 545.24 1463.13 544.123 c
+1464.38 542.002 1465.8 540.396 1468.38 538.65 c
+1469.63 537.828 1471.14 537.028 1472.71 536.348 c
+1490.76 528.497 l
+1491.62 528.169 1492.45 527.778 1493.05 527.431 c
+1493.66 527.084 1494.04 526.781 1494.34 526.516 c
+1495.05 525.874 1495.25 525.54 1495.52 525.001 c
+1495.9 524.298 1496.05 522.947 1496.04 521.589 c
+1496.04 504.919 l
+1495.97 504.111 1495.91 503.371 1494.54 502.519 c
+1493.36 501.899 1491.79 501.668 1490.03 502.302 c
+1489.45 502.53 1488.83 503.178 1488.58 503.806 c
+1488.28 504.417 1488.12 505.594 1488.13 506.754 c
+1488.13 526.35 l
+1460.88 526.35 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+n
+closepath
+308.385 598.218 m
+296.288 668.063 284.07 737.901 272.168 807.759 c
+270.414 816.303 268.644 824.777 265.826 833.335 c
+264.797 836.245 263.439 838.99 261.359 841.712 c
+260.917 842.301 260.46 842.879 259.696 843.762 c
+258.212 845.488 255.769 848.098 253.24 850.246 c
+255.103 851.204 256.924 852.243 258.692 853.365 c
+260.46 854.487 262.174 855.693 263.443 856.628 c
+265.983 858.517 267.054 859.476 268.779 861.161 c
+269.629 862.01 270.545 862.998 271.425 864.018 c
+272.304 865.037 273.146 866.089 274.116 867.383 c
+275.086 868.676 276.183 870.213 277.24 871.776 c
+278.297 873.34 279.314 874.93 280.4 876.73 c
+281.487 878.529 282.643 880.537 283.748 882.574 c
+284.852 884.61 285.904 886.675 286.954 888.891 c
+289.092 893.427 291.154 898.328 292.811 903.114 c
+299.197 921.361 302.558 939.544 304.581 957.878 c
+305.328 964.678 305.845 971.501 306.133 976.692 c
+306.42 981.882 306.477 985.438 306.464 988.994 c
+306.433 996.019 306.146 1003.01 305.313 1009.91 c
+304.901 1013.31 304.356 1016.7 303.907 1019.16 c
+303.458 1021.62 303.105 1023.16 302.723 1024.69 c
+301.623 1029.12 300.273 1033.39 298.406 1037.41 c
+297.171 1040.1 295.491 1043.04 293.365 1045.77 c
+292.359 1047.08 291.287 1048.34 289.911 1049.68 c
+288.536 1051.02 286.858 1052.45 285.069 1053.73 c
+283.281 1055 281.381 1056.12 279.399 1057.07 c
+277.417 1058.01 275.353 1058.78 273.524 1059.34 c
+269.892 1060.43 266.938 1060.83 263.664 1061.18 c
+260.415 1061.49 257.132 1061.59 253.862 1061.59 c
+170.759 1061.59 l
+143.3 823.176 l
+140.628 830.461 138.021 837.611 134.645 844.948 c
+133.779 846.805 132.868 848.641 132.057 850.183 c
+131.247 851.724 130.537 852.971 129.79 854.196 c
+129.043 855.421 128.259 856.622 127.562 857.628 c
+126.042 859.791 125.063 861.017 123.51 862.711 c
+122.674 863.609 121.652 864.628 120.565 865.573 c
+117.031 868.626 113.4 870.511 109.436 871.581 c
+105.792 872.548 102.266 872.708 98.72 872.559 c
+97.5655 872.51 96.4123 872.429 94.7115 872.21 c
+91.2401 871.77 86.2166 870.825 81.9101 869.544 c
+66.606 865.163 51.2781 858.046 36.0497 851.199 c
+47.235 846.868 58.7699 842.613 70.1193 836.431 c
+72.1859 835.304 74.223 834.123 75.9747 833.051 c
+77.7265 831.978 79.193 831.013 80.6397 830.019 c
+82.0864 829.025 83.5134 828.002 85.2485 826.635 c
+88.6173 823.985 92.8661 820.257 96.5789 815.952 c
+98.3758 813.887 100.114 811.672 101.713 809.362 c
+103.312 807.051 104.773 804.646 105.958 802.512 c
+108.31 798.231 109.822 794.774 111.309 790.908 c
+117.644 774.289 120.364 757.441 122.584 740.622 c
+124.978 721.529 126.222 702.406 127.522 683.287 c
+177.604 683.287 l
+195.153 836.827 l
+199.555 836.827 l
+202.153 836.796 204.726 835.787 207.478 833.058 c
+209.611 830.766 211.074 827.792 211.868 825.04 c
+214.529 815.687 216.7 806.267 219.117 796.88 c
+247.975 683.287 l
+308.385 598.218 l
+closepath
+234.015 985.206 m
+235.246 985.206 236.478 985.147 237.696 984.98 c
+238.915 984.812 240.12 984.55 241.004 984.322 c
+242.655 983.89 243.465 983.521 244.619 982.929 c
+246.249 982.01 247.555 981.173 249.182 979.166 c
+251.129 976.827 252.252 973.698 252.843 971.313 c
+253.007 970.651 253.154 969.956 253.286 969.258 c
+253.419 968.56 253.537 967.858 253.663 966.724 c
+253.93 964.359 254.157 960.781 254.043 957.733 c
+253.894 951.928 253.354 946.011 252.181 940.178 c
+251.644 937.537 250.97 934.925 250.441 933.07 c
+249.913 931.214 249.529 930.116 249.125 929.025 c
+248.357 926.953 247.532 924.927 246.534 923.008 c
+245.666 921.342 244.709 919.727 243.524 918.235 c
+240.385 914.201 237.226 913.033 233.94 911.457 c
+232.824 910.93 231.69 910.441 230.541 909.991 c
+229.391 909.542 228.226 909.133 227.495 908.892 c
+226.121 908.444 225.961 908.474 225.261 908.368 c
+217.952 908.24 210.635 908.328 203.322 908.307 c
+212.111 985.206 l
+234.015 985.206 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+302.257 680.446 m
+302.618 677.989 l
+337.455 678.001 l
+348.718 724.884 l
+391.217 724.884 l
+391.919 678.001 l
+431.119 678.001 l
+418.058 962.01 l
+377.226 962.01 l
+302.257 680.446 l
+closepath
+390.47 786.296 m
+363.867 786.296 l
+388.768 888.392 l
+390.47 786.296 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+closepath
+302.238 680.377 m
+301.603 677.989 l
+302.589 677.989 l
+302.238 680.377 l
+0 w
+1 J
+1 j
+10 M
+/GHighlight false def
+0 0 0 setrgbcolor
+eofill
+closepath
+n
+grestore %end of tile clipping
+end %Signlab5Dict
+end %userdict

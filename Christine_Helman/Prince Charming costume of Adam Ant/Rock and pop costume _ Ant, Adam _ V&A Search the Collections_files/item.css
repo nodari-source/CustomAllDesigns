@@ -1,0 +1,123 @@
+/* ENLARGED IMAGE OVERLAY */
+
+div.overlay { 
+    background: url(../../images/template/overlay/white-enlarged.png) no-repeat 0 0;
+    width:900px; 
+    height:642px;
+    display:none; 
+    text-align: center; 
+    padding-top: 50px;
+} 
+
+div.overlay .red_button, div.overlay .order_this_image {
+    position:absolute; 
+    padding:3px 1px;
+    right:45px; 
+    bottom:10px;
+    z-index: 23; 
+    width: 90px;
+    font-size:0.9em;
+    text-align: center;
+}
+
+div.overlay div.close { 
+    right:45px; 
+    top:45px; 
+}
+
+
+/* EMAIL OVERLAY */
+
+div.overlay_email { 
+    background: url(../../images/template/overlay/email.png) no-repeat 0 0;
+    width:400px; 
+    height:250px;         
+    display:none; 
+    padding: 35px;
+} 
+
+div.overlay_email div.close { 
+    right:33px; 
+    top:23px; 
+}
+
+div.overlay_email h2 {
+    margin-bottom: 6px;
+}
+
+div.overlay_email ul li {
+    list-style-type:none;
+    clear: both;
+    margin-bottom: 6px;
+    overflow: auto;
+}
+
+div.overlay_email textarea {
+    height:150px;
+    padding:5px;
+    width:260px;
+}
+
+div.overlay_email input, div.overlay_email label {
+    float: left;
+}
+
+div.overlay_email label {
+    width: 160px;
+    font-weight: bold;
+}
+
+div.overlay_email input {
+    width: 200px;
+}
+
+#email_item_submit {
+    width: 70px;
+}
+
+
+/* QR OVERLAY */
+
+div.overlay_qr { 
+    background-image:url(../../images/template/overlay/qr_square.png); 
+    width:200px; 
+    height:200px;         
+    display:none; 
+    text-align: center; 
+    padding-top: 17px;
+/*
+    padding-bottom: 10px;
+*/
+} 
+
+div.overlay_qr div.close { 
+    right:17px; 
+    top:17px; 
+}
+
+/* ORDER OVERLAY */
+#overlay_survey { 
+    background-image:url(../../images/template/overlay/white.png); 
+    width:370px; 
+    height:405px;         
+    display:none; 
+    padding: 35px 28px;
+    text-align:left;
+} 
+
+#overlay_survey div.close { 
+    right:23px; 
+    top:23px; 
+}
+
+#overlay_survey h2 {
+    margin-bottom: 0;
+}
+
+.img_terms {
+  margin: 0 0.4em 0 0;
+  position: relative;
+  top: 0.2em;
+}
+
+#terms_prompt a { text-decoration:underline; }

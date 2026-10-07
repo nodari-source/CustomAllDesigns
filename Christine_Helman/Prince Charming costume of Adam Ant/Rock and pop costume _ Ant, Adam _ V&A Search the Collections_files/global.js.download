@@ -1,0 +1,151 @@
+$(document).ready(function(){
+    // Cookie banner
+    (function(){
+      var n=document.querySelector(".js-cookie-banner");
+        if(n){
+            new CookiesEuBanner(function(){}, true);
+            var o=document.querySelector(".js-cookie-banner-close");window.onload=function(){n.classList.remove("b-cookie-banner--hidden")},o.onclick=function(e){e.preventDefault(),n.classList.add("b-cookie-banner--hidden")}
+        }
+    })();
+
+    $("a#more_search_options").click(function(event){
+        event.preventDefault();
+        if($("#advanced_search").is(":visible")) {
+            $("#advanced_search").hide(200);
+            $("#advanced_search").removeClass("hide");
+            $("#more_search_options").removeClass("down_arrow_red").addClass("right_arrow_red");
+            // Track closing of advanced search
+            _gaq.push(['_trackEvent', 'StC Search UI', 'More search options', 'Close']);
+            _gaq.push(['two._trackEvent', 'StC Search UI', 'More search options', 'Close']);
+        } else {
+            $("#advanced_search").show(200);
+            $("#advanced_search").removeClass("show");
+            /* set default search quality */
+            $("input[name=quality]")[0].checked = true;
+            $("input[name=listing_type]").val("list");
+            $("#more_search_options").removeClass("right_arrow_red").addClass("down_arrow_red");
+            // Track opening of advanced search          
+            _gaq.push(['_trackEvent', 'StC Search UI', 'More search options', 'Open']);
+            _gaq.push(['two._trackEvent', 'StC Search UI', 'More search options', 'Open']);
+        }
+    });
+    
+    // Google Analytics Events
+    // Change number and format of search results
+    $('#customise li a').click(function(event){
+        if ($(this).parent().hasClass('num_results')) {
+            _gaq.push(['_trackEvent', 'StC Search UI', 'Results per page', $(this).text()]);
+            _gaq.push(['two._trackEvent', 'StC Search UI', 'Results per page', $(this).text()]);
+        } else {
+            _gaq.push(['_trackEvent', 'StC Search UI', 'Results style', $(this).text()]);
+            _gaq.push(['two._trackEvent', 'StC Search UI', 'Results style', $(this).text()]);
+        }
+    });
+    // Use pagination of search results
+    $('div.pagination li a').click(function(event){
+        _gaq.push(['_trackEvent', 'StC Search UI', 'Pagination', $(this).text()]);
+        _gaq.push(['two._trackEvent', 'StC Search UI', 'Pagination', $(this).text()]);       
+    });
+    
+    // Sort list view of results
+    $('#list-view .header li a').click(function(event){
+        _gaq.push(['_trackEvent', 'StC Search UI', 'Sort', $(this).text()]);
+        _gaq.push(['two._trackEvent', 'StC Search UI', 'Sort', $(this).text()]);
+    });
+    
+    // Narrow your results by category
+    $('#additional_options_list ul.filter-item li a').click(function(event){
+        var category_type = $(this).closest('ul').siblings('h2')[0];
+        var category_value = $(this).text().replace(/\s+\([0-9]+\)$/, '');
+        _gaq.push(['_trackEvent', 'StC Search Narrow', $(category_type).text(), category_value]);
+        _gaq.push(['two._trackEvent', 'StC Search Narrow', $(category_type).text(), category_value]);        
+    });
+    
+    // USe Explore related objects on item page
+    $('#related_searches ul li a').click(function(event){
+        var category_type = $(this).closest('ul').siblings('h3')[0];
+        var category_value = $(this).text();
+        _gaq.push(['_trackEvent', 'StC Explore related objects', $(category_type).text(), category_value]);
+        _gaq.push(['two._trackEvent', 'StC Explore related objects', $(category_type).text(), category_value]);                
+    });
+    
+    // Item UI Image overlay
+    $('#enlarge_image').click(function(event){
+        _gaq.push(['_trackEvent', 'StC Item UI', 'Enlarge Image']);
+        _gaq.push(['two._trackEvent', 'StC Item UI', 'Enlarge Image']);                
+    });    
+
+    // Item UI Image carousel
+    $('#carousel div.jcarousel-next').live('click', function(event){
+        _gaq.push(['_trackEvent', 'StC Item UI', 'Carousel', 'Next']);
+        _gaq.push(['two._trackEvent', 'StC Item UI', 'Carousel', 'Next']);                
+    });    
+    $('#carousel div.jcarousel-prev').live('click', function(event){
+        _gaq.push(['_trackEvent', 'StC Item UI', 'Carousel', 'Previous']);
+        _gaq.push(['two._trackEvent', 'StC Item UI', 'Carousel', 'Previous']);                
+    });
+    $('#carousel .jcarousel-item a').live('click', function(event){
+        _gaq.push(['_trackEvent', 'StC Item UI', 'Carousel', 'Image Select']);
+        _gaq.push(['two._trackEvent', 'StC Item UI', 'Carousel', 'Image Select']);                
+    });        
+    
+    // Item UI utilities
+    $('div.utility a').click(function(event){
+        _gaq.push(['_trackEvent', 'StC Item UI', 'Utility', $(this).text()]);
+        _gaq.push(['two._trackEvent', 'StC Item UI', 'Utility', $(this).text()]);
+    });
+    
+    // Item UI Tabs
+    $('#details-tabs a').click(function(event){
+        _gaq.push(['_trackEvent', 'StC Item UI', 'Tabs', $(this).text()]);
+        _gaq.push(['two._trackEvent', 'StC Item UI', 'Tabs', $(this).text()]);
+    });       
+    
+    // Image ordering
+    $('a#order_image_link, .item-imagetext a.order').click(function(event){     
+        var url_parts = $(this).attr('href').split('/');
+        var image_id = url_parts[url_parts.length - 2];
+        _gaq.push(['_trackEvent', 'StC Image Downloads', "Add to download", image_id]);
+        _gaq.push(['two._trackEvent', 'StC Image Downloads', "Add to download", image_id]);           
+    });
+
+    // Log-in attempts
+    $('.login-box form').submit(function(event){
+        _gaq.push(['_trackEvent', 'StC Image Downloads', "Log in"]);
+        _gaq.push(['two._trackEvent', 'StC Image Downloads', "Log in"]);           
+    });    
+    $('.register-box form').submit(function(event){     
+        _gaq.push(['_trackEvent', 'StC Image Downloads', "Register"]);
+        _gaq.push(['two._trackEvent', 'StC Image Downloads', "Register"]);           
+    });        
+    
+    // Ordering events
+    $('.orders .order-box a').click(function(event){
+        _gaq.push(['_trackEvent', 'StC Image Downloads', 'Manage', $(this).text()]);
+        _gaq.push(['two._trackEvent', 'StC Image Downloads', 'Manage', $(this).text()]);        
+    });
+    
+    $("a#clear_form").click(function(event) {
+        event.preventDefault();
+        $("#search_form").clearForm();
+    });
+    
+});
+
+$.fn.clearForm = function() {
+    return this.each(function() {
+        var type = this.type, tag = this.tagName.toLowerCase();
+        if (tag == 'form') {
+            return $(':input',this).clearForm();
+        }
+        if (type == 'text' || type == 'password' || tag == 'textarea') {
+            this.value = '';
+        } else if (type == 'checkbox' || (type == 'radio' && this.name != 'quality')) {
+            this.checked = false;
+        } else if (tag == 'select') {
+            this.selectedIndex = -1;
+        }
+    });
+};
+
+
